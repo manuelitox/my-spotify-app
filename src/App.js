@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import theme from './config/theme'
-import Routers from './Routers'
-import GlobalStyles from './GlobalStyles'
+import theme from 'config/theme'
+import Routers from 'Routers'
+import GlobalStyles from 'GlobalStyles'
 
 const App = () => (
   <ThemeProvider theme={ theme }>
