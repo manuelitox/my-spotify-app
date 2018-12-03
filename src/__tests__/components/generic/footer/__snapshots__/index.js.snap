@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | Footer should render a component 1`] = `
+<styled.footer>
+  <p>
+    Powered by 
+    <ReactComponent />
+    . Developed with 
+    <ReactComponent />
+     
+    <a
+      href="https://github.com/manuelitox"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Manuel
+    </a>
+    .
+  </p>
+</styled.footer>
+`;
