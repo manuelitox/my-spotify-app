@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | App should render an App 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "blueDark": "#262D45",
+      "blueDarkText": "#A8A9C1",
+      "blueLight": "#3D4EC9",
+      "blueLightText": "#97A4FF",
+      "maxWidth": "1200px",
+      "offWhite": "#999999",
+      "shadow": "rgba(0, 0, 0, .7)",
+      "size": Object {
+        "medium": "990px",
+        "small": "760px",
+      },
+      "textFooter": "#385758",
+    }
+  }
+>
+  <Routers />
+  <GlobalStyleComponent />
+</ThemeProvider>
+`;
