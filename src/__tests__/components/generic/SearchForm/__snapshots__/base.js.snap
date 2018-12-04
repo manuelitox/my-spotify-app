@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | SearchForm should render a component 1`] = `
+<div>
+  <input
+    id="search"
+    onChange={[MockFunction]}
+    type="search"
+  />
+</div>
+`;
