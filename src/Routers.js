@@ -5,15 +5,15 @@ import { Router, Route, Switch } from 'react-router-dom'
 import store from 'store'
 import history from './history'
 import Footer from 'components/generic/Footer/'
+import SearchPage from 'components/SearchPage/'
 
 const Routers = () => (
   <Provider store={ store }>
     <Router history={ history }>      
       <Fragment>
-        <Route path="/" render={ () => <header>Header!</header> } />
         <main>
           <Switch>
-            <Route path="/home" render={ () => <button>lorem</button> } />
+            <Route exact path="/" component={ SearchPage } />
           </Switch>
         </main>
         <Route path="/" component={ Footer } />
