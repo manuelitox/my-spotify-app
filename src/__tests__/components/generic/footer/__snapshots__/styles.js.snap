@@ -22,6 +22,15 @@ exports[`Component | StyledFooter should render a styled component 1`] = `
           [Function],
           ";
   }
+  p {
+    margin: 0;
+    padding: 20px 0;
+    @media only screen and (max-width: ",
+          [Function],
+          ") {
+      padding-bottom: 10px;
+    }
+  }
 ",
         ],
       },
