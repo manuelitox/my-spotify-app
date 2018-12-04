@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | SearchPage should render a component 1`] = `
+<Fragment>
+  <styled.div>
+    <ReactComponent />
+    <SearchFormContainer />
+  </styled.div>
+  <Styled(ReactComponent) />
+</Fragment>
+`;
