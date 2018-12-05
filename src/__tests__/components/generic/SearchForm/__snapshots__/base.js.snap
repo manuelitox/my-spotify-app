@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component | SearchForm should render a component 1`] = `
-<div>
-  <input
+<styled.div>
+  <styled.input
     id="search"
     onChange={[MockFunction]}
+    placeholder="search an artist..."
     type="search"
   />
-</div>
+</styled.div>
 `;
