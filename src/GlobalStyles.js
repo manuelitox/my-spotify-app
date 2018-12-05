@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }  
   input {
+    color: ${ props => props.theme.blueDark };
     font-family: 'fira sans', sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
