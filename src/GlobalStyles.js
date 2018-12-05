@@ -23,6 +23,12 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }  
+  input {
+    font-family: 'fira sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 100%;
+  }
 `;
 
 export default GlobalStyles
