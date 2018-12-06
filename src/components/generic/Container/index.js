@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import StyledContainer from './styles'
 
-const Container = WrapperComponent => props => (
+const WithContainer = WrapperComponent => props => (
   <StyledContainer { ...props }>
     <WrapperComponent>
       { props.children }
@@ -11,8 +11,8 @@ const Container = WrapperComponent => props => (
   </StyledContainer>
 )
 
-Container.propTypes = {
+WithContainer.propTypes = {
   WrapperComponent: PropTypes.func.isRequired
 }
 
-export default Container
+export default WithContainer

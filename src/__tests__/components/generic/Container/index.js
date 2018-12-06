@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Container from 'components/generic/Container/'
+import WithContainer from 'components/generic/Container/'
 
-describe('Component | Container', () => {
+describe('HOC Component | WithContainer', () => {
   let component 
   beforeEach( () => {
     component = shallow(
-      <Container WrapperComponent={ () => <div>asd</div> } />
+      <WithContainer WrapperComponent={ () => <div>asd</div> } />
     )
   })
   it('should render a component', () => {
