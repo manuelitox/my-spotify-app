@@ -2,6 +2,6 @@
 
 exports[`Component | ArtistPage should render a component 1`] = `
 <div>
-  Artist Page
+  <Header />
 </div>
 `;
