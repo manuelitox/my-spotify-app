@@ -2,6 +2,10 @@
 
 exports[`Component | SearchFormContainer should render a component 1`] = `
 <SearchForm
+  isOpen={false}
+  loading={false}
   onChange={[Function]}
+  openSuggestions={[Function]}
+  suggestions={Array []}
 />
 `;

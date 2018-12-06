@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import SearchFormContainer from 'components/generic/SearchForm/container'
+import { SearchFormContainer } from 'components/generic/SearchForm/container'
 
 describe('Component | SearchFormContainer', () => {
   let component 
