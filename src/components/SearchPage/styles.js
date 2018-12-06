@@ -7,10 +7,10 @@ const StyledSearchPage = styled.div`
   color: white;
   height: 70vh;
   text-align: center;
-  padding: 180px 0;
+  padding: 180px 20px;
   width: 100%;
   @media only screen and (max-width: ${ props => props.theme.size.small }) {
-    padding: 80px 0;
+    padding: 80px 20px;
   }
 `
 

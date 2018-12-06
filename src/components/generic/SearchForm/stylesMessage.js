@@ -10,9 +10,6 @@ const StyledMessage = styled.div`
   top: 16px;
   padding: 8px;
   position: absolute;
-  @media only screen and (max-width: ${ props => props.theme.size.small }) {
-    right: 34px;
-  }
 `
 
 export default StyledMessage
