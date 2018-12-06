@@ -6,6 +6,7 @@ exports[`Component | SearchFormContainer should render a component 1`] = `
   loading={false}
   onChange={[Function]}
   openSuggestions={[Function]}
+  placeholder="search an artist..."
   suggestions={Array []}
 />
 `;

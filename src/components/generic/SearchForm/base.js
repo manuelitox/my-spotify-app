@@ -12,6 +12,7 @@ const SearchForm = ({
   isOpen,
   loading,
   onChange,
+  placeholder,
   suggestions,
   openSuggestions
 }) => (
@@ -22,7 +23,7 @@ const SearchForm = ({
       isOpen={ isOpen }
       onClick={ openSuggestions }
       onChange={ onChange }
-      placeholder="search an artist..." />
+      placeholder={ placeholder } />
     <LoadingMessage loading={ loading } />
     <ArtistMatchesCounter isOpen={ isOpen } loading={ loading } numberOfArtists={ suggestions.length } />
     <SuggestionsList isOpen={ isOpen } numberOfArtists={ suggestions.length } suggestions={ suggestions } />
@@ -33,6 +34,7 @@ SearchForm.propTypes = {
   isOpen: PropTypes.bool,
   loading: PropTypes.bool,
   onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
   suggestions: PropTypes.array.isRequired,
   openSuggestions: PropTypes.func.isRequired
 }
