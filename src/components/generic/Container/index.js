@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import StyledContainer from './styles'
 
-const WithContainer = WrapperComponent => props => (
-  <StyledContainer { ...props }>
+const WithContainer = (WrapperComponent, backgroundColor) => props => (
+  <StyledContainer bg={ backgroundColor } { ...props }>
     <WrapperComponent>
       { props.children }
     </WrapperComponent>
@@ -12,6 +12,7 @@ const WithContainer = WrapperComponent => props => (
 )
 
 WithContainer.propTypes = {
+  BackgroundColor: PropTypes.string,
   WrapperComponent: PropTypes.func.isRequired
 }
 

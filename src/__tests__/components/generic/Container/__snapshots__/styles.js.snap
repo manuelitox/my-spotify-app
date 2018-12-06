@@ -11,15 +11,22 @@ exports[`Component | StyledContainer should render a component 1`] = `
         "isStatic": false,
         "rules": Array [
           "
+  background-color: ",
+          [Function],
+          ";
   margin: 0 auto;
   max-width: ",
           [Function],
           ";
+  padding: 0 20px;
 ",
         ],
       },
       "displayName": "styled.div",
       "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "bg": [Function],
+      },
       "render": [Function],
       "styledComponentId": "sc-bdVaJa",
       "target": "div",
