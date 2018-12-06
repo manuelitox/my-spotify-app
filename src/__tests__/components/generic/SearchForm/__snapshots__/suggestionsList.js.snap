@@ -7,7 +7,7 @@ exports[`Component | SuggestionsList should render a component 1`] = `
   >
     <Link
       replace={false}
-      to="/artist/Alicia-Keys"
+      to="/artist/Alicia-Keys/1"
     >
       <img
         alt="Alicia Keys"
@@ -23,7 +23,7 @@ exports[`Component | SuggestionsList should render a component 1`] = `
   >
     <Link
       replace={false}
-      to="/artist/Queen"
+      to="/artist/Queen/2"
     >
       <img
         alt="Queen"
@@ -39,7 +39,7 @@ exports[`Component | SuggestionsList should render a component 1`] = `
   >
     <Link
       replace={false}
-      to="/artist/John-Mayer"
+      to="/artist/John-Mayer/3"
     >
       <img
         alt="John Mayer"
@@ -55,7 +55,7 @@ exports[`Component | SuggestionsList should render a component 1`] = `
   >
     <Link
       replace={false}
-      to="/artist/ACDC"
+      to="/artist/ACDC/4"
     >
       <img
         alt="ACDC"
@@ -71,7 +71,7 @@ exports[`Component | SuggestionsList should render a component 1`] = `
   >
     <Link
       replace={false}
-      to="/artist/Blink-182"
+      to="/artist/Blink-182/5"
     >
       <img
         alt="Blink 182"
@@ -87,7 +87,7 @@ exports[`Component | SuggestionsList should render a component 1`] = `
   >
     <Link
       replace={false}
-      to="/artist/Bon-Jovi"
+      to="/artist/Bon-Jovi/6"
     >
       <img
         alt="Bon Jovi"
@@ -103,7 +103,7 @@ exports[`Component | SuggestionsList should render a component 1`] = `
   >
     <Link
       replace={false}
-      to="/artist/2pac"
+      to="/artist/2pac/7"
     >
       <img
         alt="2pac"
