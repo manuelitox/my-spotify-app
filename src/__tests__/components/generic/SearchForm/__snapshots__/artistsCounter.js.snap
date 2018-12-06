@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | ArtistMatchesCounter should render a component 1`] = `
+<styled.div>
+  4
+   matches
+</styled.div>
+`;
+
+exports[`Component | ArtistMatchesCounter should render null because isOpen is false 1`] = `""`;
+
+exports[`Component | ArtistMatchesCounter should render null because loading is true 1`] = `""`;
