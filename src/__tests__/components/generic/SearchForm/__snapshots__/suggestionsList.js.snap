@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | SuggestionsList should render a component 1`] = `
+<styled.ul>
+  <li
+    key="1"
+  >
+    <Link
+      replace={false}
+      to="/artist/Alicia-Keys"
+    >
+      <img
+        alt="Alicia Keys"
+        height="40"
+        src="placeholderArtist.svg"
+        width="40"
+      />
+      Alicia Keys
+    </Link>
+  </li>
+  <li
+    key="2"
+  >
+    <Link
+      replace={false}
+      to="/artist/Queen"
+    >
+      <img
+        alt="Queen"
+        height="40"
+        src="placeholderArtist.svg"
+        width="40"
+      />
+      Queen
+    </Link>
+  </li>
+  <li
+    key="3"
+  >
+    <Link
+      replace={false}
+      to="/artist/John-Mayer"
+    >
+      <img
+        alt="John Mayer"
+        height="40"
+        src="placeholderArtist.svg"
+        width="40"
+      />
+      John Mayer
+    </Link>
+  </li>
+  <li
+    key="4"
+  >
+    <Link
+      replace={false}
+      to="/artist/ACDC"
+    >
+      <img
+        alt="ACDC"
+        height="40"
+        src="placeholderArtist.svg"
+        width="40"
+      />
+      ACDC
+    </Link>
+  </li>
+  <li
+    key="5"
+  >
+    <Link
+      replace={false}
+      to="/artist/Blink-182"
+    >
+      <img
+        alt="Blink 182"
+        height="40"
+        src="placeholderArtist.svg"
+        width="40"
+      />
+      Blink 182
+    </Link>
+  </li>
+  <li
+    key="6"
+  >
+    <Link
+      replace={false}
+      to="/artist/Bon-Jovi"
+    >
+      <img
+        alt="Bon Jovi"
+        height="40"
+        src="placeholderArtist.svg"
+        width="40"
+      />
+      Bon Jovi
+    </Link>
+  </li>
+  <li
+    key="7"
+  >
+    <Link
+      replace={false}
+      to="/artist/2pac"
+    >
+      <img
+        alt="2pac"
+        height="40"
+        src="placeholderArtist.svg"
+        width="40"
+      />
+      2pac
+    </Link>
+  </li>
+</styled.ul>
+`;
+
+exports[`Component | SuggestionsList should render null because isOpen is false 1`] = `""`;
+
+exports[`Component | SuggestionsList should render null because numberOfArtists is 0 1`] = `""`;

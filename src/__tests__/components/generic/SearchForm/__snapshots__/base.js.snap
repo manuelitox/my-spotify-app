@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | SearchForm should render a component 1`] = `
+<styled.div>
+  <styled.input
+    id="search"
+    onChange={[MockFunction]}
+    onClick={[MockFunction]}
+    placeholder="search an artist..."
+    type="search"
+  />
+  <LoadingMessage />
+  <ArtistMatchesCounter
+    numberOfArtists={7}
+  />
+  <SuggestionsList
+    numberOfArtists={7}
+    suggestions={
+      Array [
+        Object {
+          "id": "1",
+          "name": "Alicia Keys",
+        },
+        Object {
+          "id": "2",
+          "name": "Queen",
+        },
+        Object {
+          "id": "3",
+          "name": "John Mayer",
+        },
+        Object {
+          "id": "4",
+          "name": "ACDC",
+        },
+        Object {
+          "id": "5",
+          "name": "Blink 182",
+        },
+        Object {
+          "id": "6",
+          "name": "Bon Jovi",
+        },
+        Object {
+          "id": "7",
+          "name": "2pac",
+        },
+      ]
+    }
+  />
+</styled.div>
+`;

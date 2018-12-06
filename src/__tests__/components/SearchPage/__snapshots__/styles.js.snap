@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component | StyledFooter should render a styled component 1`] = `
+exports[`Component | StyledSearchPage should render a styled component 1`] = `
 <StyledComponent
   forwardedComponent={
     Object {
@@ -11,34 +11,27 @@ exports[`Component | StyledFooter should render a styled component 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-  color: ",
-          [Function],
-          ";
-  font-size: 1.2rem;
-  font-weight: 500;
+  background-image: linear-gradient(#3DC9C2, #3D4EC9);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 70vh;
   text-align: center;
-  a {
-    color: ",
-          [Function],
-          ";
-  }
-  p {
-    margin: 0;
-    padding: 20px 0;
-    @media only screen and (max-width: ",
+  padding: 180px 0;
+  width: 100%;
+  @media only screen and (max-width: ",
           [Function],
           ") {
-      padding-bottom: 10px;
-    }
+    padding: 80px 0;
   }
 ",
         ],
       },
-      "displayName": "styled.footer",
+      "displayName": "styled.div",
       "foldedComponentIds": Array [],
       "render": [Function],
       "styledComponentId": "sc-bdVaJa",
-      "target": "footer",
+      "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],

@@ -7,9 +7,11 @@ exports[`Component | App should render an App 1`] = `
       "blueDark": "#262D45",
       "blueDarkText": "#A8A9C1",
       "blueLight": "#3D4EC9",
+      "blueLightBorder": "#414C6F",
       "blueLightText": "#97A4FF",
       "maxWidth": "1200px",
       "offWhite": "#999999",
+      "searchSpan": "#F7F7F7",
       "shadow": "rgba(0, 0, 0, .7)",
       "size": Object {
         "medium": "990px",

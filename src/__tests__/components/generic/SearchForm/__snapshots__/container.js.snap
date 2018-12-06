@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | SearchFormContainer should render a component 1`] = `
+<SearchForm
+  isOpen={false}
+  loading={false}
+  onChange={[Function]}
+  openSuggestions={[Function]}
+  suggestions={Array []}
+/>
+`;
