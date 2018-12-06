@@ -12,12 +12,13 @@ exports[`Component | StyledSearchForm should render a styled component 1`] = `
         "rules": Array [
           "
   margin: 20px auto 0;
+  position: relative;
   width: 560px;
   @media only screen and (max-width: ",
           [Function],
           ") {
-    width: 100%;
     padding: 0 20px;
+    width: 100%;
   }
 ",
         ],
