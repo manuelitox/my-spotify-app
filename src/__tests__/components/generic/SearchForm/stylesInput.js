@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import StyledInput from 'components/generic/SearchForm/styles-input'
+import StyledInput from 'components/generic/SearchForm/stylesInput'
 
 describe('Component | StyledInput', () => {
   let component 

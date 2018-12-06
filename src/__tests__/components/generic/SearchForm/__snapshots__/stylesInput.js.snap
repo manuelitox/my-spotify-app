@@ -8,18 +8,26 @@ exports[`Component | StyledInput should render a styled component 1`] = `
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "sc-bdVaJa",
-        "isStatic": true,
+        "isStatic": false,
         "rules": Array [
           "
   appearance: none;
   border: 0;
-  border-radius: 4px;
+  border-radius: ",
+          [Function],
+          ";
   padding: 20px;
+  &:focus {
+    outline: 0;
+  }
 ",
         ],
       },
       "displayName": "styled.input",
       "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "isOpen": [Function],
+      },
       "render": [Function],
       "styledComponentId": "sc-bdVaJa",
       "target": "input",
