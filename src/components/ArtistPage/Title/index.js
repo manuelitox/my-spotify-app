@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Title = value => <h2>{ value }</h2>
+import StyledTitle from './styles'
+
+const Title = ({ children }) => <StyledTitle>{ children }</StyledTitle>
 
 Title.propTypes = {
-  value: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired
 }
 
 export default Title

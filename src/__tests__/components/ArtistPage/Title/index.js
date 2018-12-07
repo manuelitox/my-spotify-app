@@ -7,7 +7,7 @@ describe('Component | Title', () => {
   let component 
   beforeEach( () => {
     component = shallow(
-      <Title value="Albums" />
+      <Title>Albums</Title>
     )
   })
   it('should render a component', () => {
