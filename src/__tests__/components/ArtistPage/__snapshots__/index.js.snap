@@ -1,8 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component | ArtistPage should render a component 1`] = `
-<div>
+<styled.div>
   <Header />
   <Banner />
-</div>
+  <Component>
+    <div>
+      Albums
+    </div>
+    <div>
+      tracks
+    </div>
+  </Component>
+</styled.div>
 `;
