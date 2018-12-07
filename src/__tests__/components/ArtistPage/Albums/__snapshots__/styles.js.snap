@@ -14,6 +14,7 @@ exports[`Component | StyledWrapperAlbums should render a styled component 1`] = 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
+  margin: 0 0 20px;
   @media only screen and (max-width: ",
           [Function],
           ") {

@@ -37,5 +37,10 @@ exports[`Component | Albums should render a component 1`] = `
       title="Hallelujah"
     />
   </styled.div>
+  <Button
+    onClick={[Function]}
+  >
+    view more albums
+  </Button>
 </div>
 `;
