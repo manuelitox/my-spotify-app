@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import theme from 'config/theme'
 import WithContainer from 'components/generic/Container/'
 
 const Banner = ({
@@ -38,4 +37,4 @@ Banner.propTypes = {
   genres: PropTypes.array.isRequired
 }
 
-export default WithContainer(Banner, theme.blueLight)
+export default WithContainer(Banner)

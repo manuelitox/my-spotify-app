@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component | Banner should render a component 1`] = `
-<styled.div
-  bg="#3D4EC9"
->
+<styled.div>
   <Banner
     genres={
       Array [
