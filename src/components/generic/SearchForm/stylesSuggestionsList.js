@@ -15,6 +15,7 @@ const StyledSuggestionsList = styled.ul`
   overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
+  z-index: 2;
   li {
     border-bottom: 1px solid ${ props => props.theme.blueLightBorder };
     &:last-of-type {
