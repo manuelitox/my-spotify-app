@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | StyledTitle should render a styled component 1`] = `
+<StyledComponent
+  color="white"
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+  color: ",
+          [Function],
+          ";
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+",
+        ],
+      },
+      "defaultProps": Object {
+        "color": "white",
+      },
+      "displayName": "styled.h2",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "color": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "h2",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
