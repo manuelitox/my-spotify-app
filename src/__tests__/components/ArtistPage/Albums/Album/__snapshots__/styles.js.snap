@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | StylesAlbum should render a styled component 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 60px 2fr;
+  grid-gap: 20px;
+  img {
+    border-radius: 4px;
+  }
+  h3 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0 0 10px;
+  }
+  p {
+    color: ",
+          [Function],
+          ";
+    font-size: 1.4rem;
+    margin: 2px 0;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
