@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | Track should render a component 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <ReactComponent />
+  <div>
+    <h4>
+      Empire State of Mind
+    </h4>
+    <p>
+      Release date: 
+      2016-07-17
+    </p>
+  </div>
+</styled.div>
+`;
