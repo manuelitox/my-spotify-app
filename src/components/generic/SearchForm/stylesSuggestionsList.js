@@ -4,14 +4,18 @@ const StyledSuggestionsList = styled.ul`
   border: 1px solid ${ props => props.theme.blueLightBorder };
   border-radius: 0 0 4px 4px;
   bottom: 2px;
+  height: 200px;
   list-style: none;
   margin: 0;
   max-height: 200px;
   text-align: left;
-  position: relative;
+  top: calc(100% - 2px);
+  position: absolute;
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  width: 100%;
+  z-index: 2;
   li {
     border-bottom: 1px solid ${ props => props.theme.blueLightBorder };
     &:last-of-type {

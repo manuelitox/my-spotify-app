@@ -5,7 +5,6 @@ const StyledSearchForm = styled.div`
   position: relative;
   width: 560px;
   @media only screen and (max-width: ${ props => props.theme.size.small }) {
-    padding: 0 20px;
     width: 100%;
   }
 `

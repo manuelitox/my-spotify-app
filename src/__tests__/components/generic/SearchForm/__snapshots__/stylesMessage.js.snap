@@ -24,11 +24,6 @@ exports[`Component | StyledMessage should render a styled component 1`] = `
   top: 16px;
   padding: 8px;
   position: absolute;
-  @media only screen and (max-width: ",
-          [Function],
-          ") {
-    right: 34px;
-  }
 ",
         ],
       },

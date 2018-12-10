@@ -6,6 +6,7 @@ import store from 'store'
 import history from './history'
 import Footer from 'components/generic/Footer/'
 import SearchPage from 'components/SearchPage/'
+import ArtistPage from 'components/ArtistPage'
 
 const Routers = () => (
   <Provider store={ store }>
@@ -14,6 +15,7 @@ const Routers = () => (
         <main>
           <Switch>
             <Route exact path="/" component={ SearchPage } />
+            <Route exact path="/artist/:artistName/:artistId" component={ ArtistPage } />
           </Switch>
         </main>
         <Route path="/" component={ Footer } />

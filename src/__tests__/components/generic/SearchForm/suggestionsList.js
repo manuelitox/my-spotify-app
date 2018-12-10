@@ -24,7 +24,7 @@ describe('Component | SuggestionsList', () => {
   it('should display the `To` parameter of the first Link', () => {
     // replace the spaces ' ' to '-' into the Artist name.
     const to = component.find(Link).at(0).props().to
-    expect(to).toEqual('/artist/Alicia-Keys')
+    expect(to).toEqual('/artist/Alicia-Keys/1')
   })
   it('should render null because isOpen is false', () => {
     component = shallow(<SuggestionsList isOpen={ false } />)    

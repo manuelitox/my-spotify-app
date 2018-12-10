@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | Header should render a component 1`] = `
+<styled.div>
+  <ReactComponent
+    height="45"
+    viewBox="0 0 70 55"
+    width="55"
+  />
+  <OnClickOutside(SearchFormContainer)
+    eventTypes={
+      Array [
+        "mousedown",
+        "touchstart",
+      ]
+    }
+    excludeScrollbar={false}
+    outsideClickIgnoreClass="ignore-react-onclickoutside"
+    placeholder="search another artist..."
+    preventDefault={false}
+    stopPropagation={false}
+  />
+</styled.div>
+`;

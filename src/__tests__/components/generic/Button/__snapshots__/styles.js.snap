@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | StyledButton should render a styled component 1`] = `
+<StyledComponent
+  bg="#F7F7F7"
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+  background-color: ",
+          [Function],
+          ";
+  border: 0;
+  border-radius: 1px;
+  color: ",
+          [Function],
+          ";
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 14px 20px;
+  transform: skew(-4deg);
+",
+        ],
+      },
+      "defaultProps": Object {
+        "bg": "#F7F7F7",
+        "textColor": "#262D45",
+      },
+      "displayName": "styled.button",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "bg": [Function],
+        "textColor": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "button",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  textColor="#262D45"
+/>
+`;

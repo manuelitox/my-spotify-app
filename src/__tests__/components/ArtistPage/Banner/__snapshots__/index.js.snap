@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | Banner should render a component 1`] = `
+<styled.div>
+  <Component />
+  <Styled(ReactComponent) />
+</styled.div>
+`;

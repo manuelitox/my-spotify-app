@@ -17,7 +17,6 @@ exports[`Component | StyledSearchForm should render a styled component 1`] = `
   @media only screen and (max-width: ",
           [Function],
           ") {
-    padding: 0 20px;
     width: 100%;
   }
 ",

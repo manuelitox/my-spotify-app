@@ -14,7 +14,7 @@ const SuggestionsList = ({
     <StyledSuggestionsList>
       { suggestions.map( suggestion => (
         <li key={ suggestion.id }>
-          <Link to={ `/artist/${ suggestion.name.replace(' ', '-') }` }>
+          <Link to={ `/artist/${ suggestion.name.replace(' ', '-') }/${ suggestion.id }` }>
             <img 
               alt={ suggestion.name }
               src={ suggestion.photo ? suggestion.photo : PlaceholderArtist } 

@@ -16,7 +16,8 @@ describe('Component | SearchForm', () => {
   let component 
   beforeEach( () => {
     component = shallow(
-      <SearchForm 
+      <SearchForm  
+        placeholder="search an artist"
         onChange={ jest.fn() }
         suggestions={ SUGGESTIONS }
         openSuggestions={ jest.fn() } />

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | Albums should render a component 1`] = `
+<div>
+  <Title>
+    Albums
+  </Title>
+  <styled.div>
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+  </styled.div>
+  <Button
+    onClick={[Function]}
+  >
+    view more albums
+  </Button>
+</div>
+`;

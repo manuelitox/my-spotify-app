@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import onClickOutside from 'react-onclickoutside'
 
 import SearchForm from './base'
@@ -45,10 +46,19 @@ export class SearchFormContainer extends Component {
     return (
       <SearchForm 
         onChange={ this.onChange } 
+        placeholder={ this.props.placeholder }
         openSuggestions={ this.openSuggestions } 
         { ...this.state } />
     )
   }
+}
+
+SearchFormContainer.defaultProps = {
+  placeholder: 'search an artist...'
+}
+
+SearchFormContainer.propTypes = {
+  placeholder: PropTypes.string
 }
 
 export default onClickOutside(SearchFormContainer)

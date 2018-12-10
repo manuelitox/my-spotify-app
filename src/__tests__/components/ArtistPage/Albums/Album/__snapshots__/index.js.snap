@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | Album should render a component 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <img
+    alt="album title"
+    height="60"
+    src="placeholderAlbum.svg"
+    width="60"
+  />
+  <div>
+    <h3>
+      album title
+    </h3>
+    <p>
+      Total tracks: 
+      10
+    </p>
+    <p>
+      Release date: 
+      2016-04-07
+    </p>
+  </div>
+</styled.div>
+`;

@@ -6,7 +6,7 @@ exports[`Component | SearchForm should render a component 1`] = `
     id="search"
     onChange={[MockFunction]}
     onClick={[MockFunction]}
-    placeholder="search an artist..."
+    placeholder="search an artist"
     type="search"
   />
   <LoadingMessage />

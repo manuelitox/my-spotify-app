@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | StyledTrack should render a styled component 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+  color: white;
+  cursor: pointer;
+  display: grid; 
+  grid-template-columns: 40px 1fr;
+  grid-gap: 20px;
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 2px 0 5px;
+  }
+  p {
+    color: ",
+          [Function],
+          ";
+    font-size: 1.2rem;
+    margin: 0;
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
