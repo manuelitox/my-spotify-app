@@ -15,6 +15,7 @@ exports[`Component | StyledButton should render a styled component 1`] = `
   background-color: ",
           [Function],
           ";
+  border: 0;
   border-radius: 1px;
   color: ",
           [Function],

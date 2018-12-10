@@ -5,6 +5,7 @@ import theme from 'config/theme'
 
 const StyledButton = styled.button`
   background-color: ${ props => props.bg };
+  border: 0;
   border-radius: 1px;
   color: ${ props => props.textColor };
   display: block;
