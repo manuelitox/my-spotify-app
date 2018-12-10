@@ -11,7 +11,7 @@ const StyledButton = styled.button`
   font-size: 1.4rem;
   font-weight: 500;
   padding: 14px 20px;
-  transform: skew(-2deg);
+  transform: skew(-4deg);
 `
 
 StyledButton.defaultProps = {
