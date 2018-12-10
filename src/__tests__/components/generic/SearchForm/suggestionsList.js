@@ -16,7 +16,7 @@ describe('Component | SuggestionsList', () => {
   ]
   let component 
   beforeEach( () => {
-    component = shallow(<SuggestionsList isOpen suggestions={ SUGGESTIONS } numberOfArtists={ 4 } />)
+    component = shallow(<SuggestionsList isOpen suggestions={ SUGGESTIONS } numberOfArtists={ 4 } closeSuggestions={ jest.fn() } />)
   })
   it('should render a component', () => {
     expect(component).toMatchSnapshot()

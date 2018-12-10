@@ -2,11 +2,16 @@
 
 exports[`Component | Header should render a component 1`] = `
 <styled.div>
-  <ReactComponent
-    height="45"
-    viewBox="0 0 70 55"
-    width="55"
-  />
+  <Link
+    replace={false}
+    to="/"
+  >
+    <ReactComponent
+      height="45"
+      viewBox="0 0 70 55"
+      width="55"
+    />
+  </Link>
   <OnClickOutside(SearchFormContainer)
     eventTypes={
       Array [

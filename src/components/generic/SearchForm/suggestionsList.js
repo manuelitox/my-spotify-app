@@ -9,13 +9,14 @@ import StyledSuggestionsList from './stylesSuggestionsList'
 const SuggestionsList = ({
   isOpen,
   suggestions,
-  numberOfArtists
+  numberOfArtists,
+  closeSuggestions
 }) => (
   isOpen && numberOfArtists >= 1 && 
     <StyledSuggestionsList>
       { suggestions.map( suggestion => (
         <li key={ suggestion.id }>
-          <Link to={ `/artist/${ NameWithOutSpaces(suggestion.name) }/${ suggestion.id }` }>
+          <Link onClick={ closeSuggestions } to={ `/artist/${ NameWithOutSpaces(suggestion.name) }/${ suggestion.id }` }>
             <img 
               alt={ suggestion.name }
               src={ suggestion.photo ? suggestion.photo : PlaceholderArtist } 
@@ -35,7 +36,8 @@ SuggestionsList.propTypes = {
     name: PropTypes.string.isRequired,
     photo: PropTypes.string
   })),
-  numberOfArtists: PropTypes.number
+  numberOfArtists: PropTypes.number,
+  closeSuggestions: PropTypes.func.isRequired
 }
 
 export default SuggestionsList
