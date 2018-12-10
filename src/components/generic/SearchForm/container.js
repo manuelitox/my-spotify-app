@@ -20,6 +20,8 @@ export class SearchFormContainer extends Component {
     if ( suggestions.length >= 1 ) this.setState({ isOpen: true })
   }
 
+  closeSuggestions = () => this.setState({ isOpen: false })
+
   onChange = e => {
     console.log(e.target.value)
     this.setState({ 
@@ -48,6 +50,7 @@ export class SearchFormContainer extends Component {
         onChange={ this.onChange } 
         placeholder={ this.props.placeholder }
         openSuggestions={ this.openSuggestions } 
+        closeSuggestions={ this.closeSuggestions }
         { ...this.state } />
     )
   }

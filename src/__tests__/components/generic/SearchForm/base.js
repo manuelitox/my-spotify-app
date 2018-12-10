@@ -2,6 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 
 import SearchForm from 'components/generic/SearchForm/base'
+import SuggestionsList from 'components/generic/SearchForm/suggestionsList'
 
 describe('Component | SearchForm', () => {
   const SUGGESTIONS = [
@@ -20,7 +21,8 @@ describe('Component | SearchForm', () => {
         placeholder="search an artist"
         onChange={ jest.fn() }
         suggestions={ SUGGESTIONS }
-        openSuggestions={ jest.fn() } />
+        openSuggestions={ jest.fn() }
+        closeSuggestions={ jest.fn() } />
     )
   })
   it('should render a component', () => {

@@ -14,7 +14,8 @@ const SearchForm = ({
   onChange,
   placeholder,
   suggestions,
-  openSuggestions
+  openSuggestions,
+  closeSuggestions
 }) => (
   <StyledSearchForm>
     <StyledInput 
@@ -26,7 +27,7 @@ const SearchForm = ({
       placeholder={ placeholder } />
     <LoadingMessage loading={ loading } />
     <ArtistMatchesCounter isOpen={ isOpen } loading={ loading } numberOfArtists={ suggestions.length } />
-    <SuggestionsList isOpen={ isOpen } numberOfArtists={ suggestions.length } suggestions={ suggestions } />
+    <SuggestionsList isOpen={ isOpen } numberOfArtists={ suggestions.length } suggestions={ suggestions } closeSuggestions={ closeSuggestions } />
   </StyledSearchForm>
 )  
 
@@ -36,7 +37,8 @@ SearchForm.propTypes = {
   onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string.isRequired,
   suggestions: PropTypes.array.isRequired,
-  openSuggestions: PropTypes.func.isRequired
+  openSuggestions: PropTypes.func.isRequired,
+  closeSuggestions: PropTypes.func.isRequired
 }
 
 export default SearchForm
