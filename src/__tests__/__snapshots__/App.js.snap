@@ -11,6 +11,7 @@ exports[`Component | App should render an App 1`] = `
       "blueLightText": "#97A4FF",
       "maxWidth": "1200px",
       "offWhite": "#999999",
+      "playIcon": "#41475d",
       "searchSpan": "#F7F7F7",
       "shadow": "rgba(0, 0, 0, .7)",
       "size": Object {

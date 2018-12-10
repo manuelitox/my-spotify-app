@@ -9,6 +9,7 @@ const theme = {
   searchSpan: '#F7F7F7',
   offWhite: '#999999',
   shadow: 'rgba(0, 0, 0, .7)',
+  playIcon: '#41475d',
   size: {
     medium: '990px',
     small: '760px'
