@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | RelatedArtists should render a component 1`] = `
+<styled.div>
+  <Component>
+    <Title
+      color="#262D45"
+    >
+      Related Artists
+    </Title>
+    <styled.div>
+      <Artist
+        id="1"
+        name="Martin Abasto"
+      />
+      <Artist
+        id="2"
+        name="Bairam Frootan"
+      />
+      <Artist
+        id="3"
+        name="Emmalynn Mazzia"
+      />
+      <Artist
+        id="4"
+        name="Gabriel Pires"
+      />
+      <Artist
+        id="5"
+        name="Irene Sotelo"
+      />
+      <Artist
+        id="6"
+        name="Oea Romana"
+      />
+      <Artist
+        id="7"
+        name="Pin Jung-Eym"
+      />
+      <Artist
+        id="8"
+        name="Udom Paowsong"
+      />
+      <Artist
+        id="9"
+        name="John Doe"
+      />
+    </styled.div>
+    <Button
+      bg="#262D45"
+      onClick={[Function]}
+      textColor="white"
+    >
+      view more tracks
+    </Button>
+  </Component>
+</styled.div>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | Artist should render a component 1`] = `
+<styled.div>
+  <img
+    alt="John Doe"
+    height="40"
+    src="placeholderArtist.svg"
+    width="40"
+  />
+  <h4>
+    John Doe
+  </h4>
+  <Link
+    replace={false}
+    to="/artist/John-Doe/1"
+  />
+</styled.div>
+`;
