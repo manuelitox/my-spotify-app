@@ -6,9 +6,7 @@ exports[`Component | ArtistPage should render a component 1`] = `
   <Banner />
   <Component>
     <Albums />
-    <div>
-      tracks
-    </div>
+    <Tracks />
   </Component>
 </styled.div>
 `;
