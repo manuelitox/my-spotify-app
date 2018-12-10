@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
+import NameWithOutSpaces from 'lib/name-without-spaces'
 import PlaceholderArtist from 'svgs/placeholderArtist.svg'
 import StyledSuggestionsList from './stylesSuggestionsList'
 
@@ -14,7 +15,7 @@ const SuggestionsList = ({
     <StyledSuggestionsList>
       { suggestions.map( suggestion => (
         <li key={ suggestion.id }>
-          <Link to={ `/artist/${ suggestion.name.replace(' ', '-') }/${ suggestion.id }` }>
+          <Link to={ `/artist/${ NameWithOutSpaces(suggestion.name) }/${ suggestion.id }` }>
             <img 
               alt={ suggestion.name }
               src={ suggestion.photo ? suggestion.photo : PlaceholderArtist } 
