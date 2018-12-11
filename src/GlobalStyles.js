@@ -14,6 +14,20 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-size: 1.6rem;
     margin: 0;
+    &.fixed {
+      position: fixed;
+      width: 100%;
+      &:before {
+        background-color: rgba(0,0,0,.7);
+        content: '';
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+      }
+    }
   }
   button {
     cursor: pointer;
