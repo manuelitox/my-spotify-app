@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | PopUpContainer should not render because isOpen is false by default 1`] = `""`;
+
+exports[`Component | PopUpContainer should render a PopUpContainer 1`] = `
+<PopUp
+  isOpen={true}
+  togglePopUp={[MockFunction]}
+>
+  <p>
+    PopUp!!
+  </p>
+</PopUp>
+`;

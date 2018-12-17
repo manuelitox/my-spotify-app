@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | PopUp should render a PopUp 1`] = `
+<Fragment>
+  <SideEffect(BodyClassName)
+    className="fixed"
+  />
+  <styled.div
+    width="500px"
+  >
+    <button
+      onClick={[MockFunction]}
+    >
+      Close
+    </button>
+    <p>
+      PopUp!!
+    </p>
+  </styled.div>
+</Fragment>
+`;

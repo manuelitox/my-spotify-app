@@ -23,5 +23,28 @@ exports[`Component | Album should render a component 1`] = `
       2016-04-07
     </p>
   </div>
+  <OnClickOutside(PopUpContainer)
+    eventTypes={
+      Array [
+        "mousedown",
+        "touchstart",
+      ]
+    }
+    excludeScrollbar={false}
+    isOpen={false}
+    outsideClickIgnoreClass="ignore-react-onclickoutside"
+    preventDefault={false}
+    stopPropagation={false}
+    togglePopUp={[Function]}
+  >
+    <div>
+      <h1>
+        Album
+      </h1>
+      <p>
+        description...
+      </p>
+    </div>
+  </OnClickOutside(PopUpContainer)>
 </styled.div>
 `;
