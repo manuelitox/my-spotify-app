@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component | PopUp should not render because isOpen is false by default 1`] = `""`;
-
 exports[`Component | PopUp should render a PopUp 1`] = `
 <Fragment>
   <SideEffect(BodyClassName)
@@ -10,6 +8,11 @@ exports[`Component | PopUp should render a PopUp 1`] = `
   <styled.div
     width="500px"
   >
+    <button
+      onClick={[MockFunction]}
+    >
+      Close
+    </button>
     <p>
       PopUp!!
     </p>

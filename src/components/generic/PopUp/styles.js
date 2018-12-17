@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const StyledPopUp = styled.div`
+  animation: enter .3s;
   background-color: white;
   height: 100vh;
   top: 0;
@@ -13,6 +14,11 @@ const StyledPopUp = styled.div`
   z-index: 5;
   @media only screen and (max-width: ${ props => props.theme.size.small }) {
     width: 100%;
+  }
+
+  @keyframes enter {
+    from { transform: translateX(500px) }
+    to { transform: translateX(0) }
   }
 `
 

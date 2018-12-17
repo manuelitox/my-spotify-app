@@ -11,6 +11,7 @@ exports[`Component | StyledPopUp should render a styled component 1`] = `
         "isStatic": false,
         "rules": Array [
           "
+  animation: enter .3s;
   background-color: white;
   height: 100vh;
   top: 0;
@@ -26,6 +27,11 @@ exports[`Component | StyledPopUp should render a styled component 1`] = `
           [Function],
           ") {
     width: 100%;
+  }
+
+  @keyframes enter {
+    from { transform: translateX(500px) }
+    to { transform: translateX(0) }
   }
 ",
         ],
