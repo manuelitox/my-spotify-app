@@ -27,11 +27,11 @@ describe('Component | SuggestionsList', () => {
     expect(to).toEqual('/artist/Alicia-Keys/1')
   })
   it('should render null because isOpen is false', () => {
-    component = shallow(<SuggestionsList isOpen={ false } />)    
+    component = shallow(<SuggestionsList isOpen={ false } closeSuggestions={ jest.fn() } />)    
     expect(component).toMatchSnapshot()
   })
   it('should render null because numberOfArtists is 0', () => {
-    component = shallow(<SuggestionsList isOpen numberOfArtists={ 0 } />)    
+    component = shallow(<SuggestionsList isOpen numberOfArtists={ 0 } closeSuggestions={ jest.fn() } />)    
     expect(component).toMatchSnapshot()
   })
 })
