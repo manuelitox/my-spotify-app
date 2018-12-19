@@ -16,6 +16,7 @@ PopUpContainer.propTypes = {
   width: PropTypes.string, 
   isOpen: PropTypes.bool,
   children: PropTypes.oneOfType([
+    PropTypes.array,
     PropTypes.string,
     PropTypes.object
   ]),

@@ -2,13 +2,20 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import BodyClassName from 'react-body-classname'
 
+import theme from 'config/theme'
+import Button from 'components/generic/Button/'
 import StyledPopUp from './styles'
 
-const PopUp = ({ width, children, togglePopUp }) => (
+const PopUp = ({ width, children, togglePopUp, textCloseButton }) => (
   <Fragment>
     <BodyClassName className="fixed" />
     <StyledPopUp width={ width }>
-      <button onClick={ togglePopUp }>Close</button>
+      <Button 
+        bg={ theme.blueDark }
+        textColor="white"
+        onClick={ togglePopUp }>
+        Close
+      </Button>
       { children }
     </StyledPopUp>
   </Fragment>

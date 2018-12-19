@@ -7,12 +7,13 @@ const StyledPopUp = styled.div`
   height: 100vh;
   top: 0;
   overflow: auto;
-  padding: 20px;
+  padding: 20px 40px;
   position: absolute;
   right: 0;
   width: ${ props => props.width };
   z-index: 5;
   @media only screen and (max-width: ${ props => props.theme.size.small }) {
+    padding: 20px 20px 140px;
     width: 100%;
   }
 
