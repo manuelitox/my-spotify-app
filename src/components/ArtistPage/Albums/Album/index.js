@@ -1,36 +1,38 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 
-import PopUp from 'components/generic/PopUp/container'
+import PopUpAlbum from './PopUp/'
 import StylesAlbum from './styles'
 import PlaceholderAlbum from 'svgs/placeholderAlbum.svg'
 
 class Album extends Component {
   state = { isOpen: false }
-  
+
   togglePopUp = () => this.setState({ isOpen: !this.state.isOpen })
 
   render () {
     const { cover, title, releaseDate, numberTracks } = this.props
     return (
-      <StylesAlbum onClick={ this.togglePopUp }>
-        <img 
-          src={ cover ? cover : PlaceholderAlbum } 
-          alt={ title }
-          width="60"
-          height="60" />
-        <div>
-          <h3>{ title }</h3>
-          <p>Total tracks: { numberTracks }</p>
-          <p>Release date: { releaseDate }</p>
-        </div>
-        <PopUp isOpen={ this.state.isOpen } togglePopUp={ this.togglePopUp }>
+      <Fragment>
+        <StylesAlbum onClick={ this.togglePopUp }>
+          <img 
+            src={ cover ? cover : PlaceholderAlbum } 
+            alt={ title }
+            width="60"
+            height="60" />
           <div>
-            <h1>Album</h1>
-            <p>description...</p>
+            <h3>{ title }</h3>
+            <p>Total tracks: { numberTracks }</p>
+            <p>Release date: { releaseDate }</p>
           </div>
-        </PopUp>         
-      </StylesAlbum>      
+        </StylesAlbum>      
+        <PopUpAlbum 
+          isOpen={ this.state.isOpen } 
+          togglePopUp={ this.togglePopUp }
+          title={ title }
+          releaseDate={ releaseDate }
+          numberTracks={ numberTracks }/>
+      </Fragment>
     )
   }
 }
