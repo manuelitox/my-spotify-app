@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import StyledTrack from 'components/ArtistPage/Tracks/Track/styles'
+import StyledTrack from 'components/generic/Track/styles'
 
 describe('Component | StyledTrack', () => {
   let component 

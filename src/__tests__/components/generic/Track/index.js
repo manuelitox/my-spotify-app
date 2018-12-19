@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Track from 'components/ArtistPage/Tracks/Track/'
+import Track from 'components/generic/Track/'
 import { ReactComponent as PauseIcon } from 'svgs/pause.svg'
 import { ReactComponent as PlayIcon } from 'svgs/play.svg'
 

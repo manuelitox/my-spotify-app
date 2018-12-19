@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Track from './Track/'
+import Track from 'components/generic/Track/'
 import Title from 'components/ArtistPage/Title/'
 import PopUp from 'components/generic/PopUp/container'
 import Button from 'components/generic/Button/'

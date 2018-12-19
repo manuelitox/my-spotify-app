@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
 const StyledTrack = styled.div`
-  color: white;
+  color: ${ props => props.isPopUpVersion ? props.theme.blueDark : 'white' };
   cursor: pointer;
   display: grid; 
   grid-template-columns: 40px 1fr;
@@ -17,5 +18,9 @@ const StyledTrack = styled.div`
     margin: 0;
   }
 `
+
+StyledTrack.propTypes = {
+  isPopUpVersion: PropTypes.bool
+}
 
 export default StyledTrack

@@ -21,13 +21,13 @@ class Track extends Component {
 
   render () {
     const { play } = this.state
-    const { name, releaseDate } = this.props
+    const { name, duration, releaseDate, isPopUpVersion, songIsAvailable } = this.props
     return (
-      <StyledTrack onClick={ this.togglePlay }>
+      <StyledTrack onClick={ this.togglePlay } isPopUpVersion={ isPopUpVersion }>
         { play ? <PauseIcon /> : <PlayIcon /> }
         <div>
           <h4>{ name }</h4>
-          <p>Release date: { releaseDate }</p>          
+          { isPopUpVersion ? <p>{ duration } { songIsAvailable && '- listen to the preview' }</p> : <p>Release date: { releaseDate }</p> }          
         </div>
       </StyledTrack>
     )
@@ -36,8 +36,11 @@ class Track extends Component {
 
 Track.propTypes = {
   name: PropTypes.string.isRequired,
+  duration: PropTypes.string,
   previewUrl: PropTypes.string,
-  releaseDate: PropTypes.string.isRequired
+  releaseDate: PropTypes.string,
+  isPopUpVersion: PropTypes.bool,
+  songIsAvailable: PropTypes.bool
 }
 
 export default Track
