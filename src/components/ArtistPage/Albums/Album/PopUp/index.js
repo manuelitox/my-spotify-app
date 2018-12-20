@@ -5,7 +5,7 @@ import Track from 'components/generic/Track/'
 import PopUp from 'components/generic/PopUp/container'
 import PlaceholderAlbum from 'svgs/placeholderAlbum.svg'
 import StylesHeaderAlbum from './styles-header'
-import StylesWrapperTracks from './styles-wrapper-tracks'
+import StylesWrapperTracks from 'components/ArtistPage/stylesWrapperTracks'
 
 const PopUpAlbum = ({ isOpen, togglePopUp, cover, title, releaseDate, numberTracks }) => (
   <PopUp isOpen={ isOpen } togglePopUp={ togglePopUp }>

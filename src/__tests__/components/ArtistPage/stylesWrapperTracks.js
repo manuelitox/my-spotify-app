@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import StylesWrapperTracks from 'components/ArtistPage/Albums/Album/PopUp/styles-wrapper-tracks'
+import StylesWrapperTracks from 'components/ArtistPage/stylesWrapperTracks'
 
 describe('Component | StylesWrapperTracks', () => {
   let component 
