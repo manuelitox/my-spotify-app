@@ -1,25 +1,16 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
+import theme from 'config/theme'
+import Title from 'components/ArtistPage/Title/'
 import Track from 'components/generic/Track/'
 import PopUp from 'components/generic/PopUp/container'
-import PlaceholderAlbum from 'svgs/placeholderAlbum.svg'
-import StylesHeaderAlbum from './styles-header'
 import StylesWrapperTracks from 'components/ArtistPage/stylesWrapperTracks'
 
-const PopUpAlbum = ({ isOpen, togglePopUp, cover, title, releaseDate, numberTracks }) => (
+const PopUpTopTracks = ({ isOpen, togglePopUp }) => (
   <PopUp isOpen={ isOpen } togglePopUp={ togglePopUp }>
     <Fragment>
-      <StylesHeaderAlbum>
-        <img 
-          src={ cover ? cover : PlaceholderAlbum } 
-          alt={ title }
-          width="300"
-          height="300" />
-        <h3>{ title }</h3>
-        <p>Total tracks: { numberTracks }</p>
-        <p>Release date: { releaseDate }</p>
-      </StylesHeaderAlbum>
+      <Title color={ theme.blueDark } insidePopUp={ true }>Top Tracks</Title>
       <StylesWrapperTracks>
         <Track 
           name="Empire State of Mind" 
@@ -62,13 +53,9 @@ const PopUpAlbum = ({ isOpen, togglePopUp, cover, title, releaseDate, numberTrac
   </PopUp>      
 )
 
-PopUpAlbum.propTypes = {
+PopUpTopTracks.propTypes = {
   isOpen: PropTypes.bool,
-  togglePopUp: PropTypes.func.isRequired,
-  cover: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  releaseDate: PropTypes.string.isRequired,
-  numberTracks: PropTypes.number.isRequired
+  togglePopUp: PropTypes.func.isRequired
 }
 
-export default PopUpAlbum
+export default PopUpTopTracks
