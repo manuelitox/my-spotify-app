@@ -17,7 +17,9 @@ exports[`Component | StyledTitle should render a styled component 1`] = `
           ";
   font-size: 2rem;
   font-weight: 500;
-  margin: 0 0 40px;
+  margin: ",
+          [Function],
+          "; 
   text-decoration: underline;
   @media only screen and (max-width: ",
           [Function],
@@ -34,6 +36,7 @@ exports[`Component | StyledTitle should render a styled component 1`] = `
       "foldedComponentIds": Array [],
       "propTypes": Object {
         "color": [Function],
+        "insidePopUp": [Function],
       },
       "render": [Function],
       "styledComponentId": "sc-bdVaJa",
