@@ -32,28 +32,9 @@ exports[`Component | Tracks should render a component 1`] = `
   >
     view more tracks
   </Button>
-  <OnClickOutside(PopUpContainer)
-    eventTypes={
-      Array [
-        "mousedown",
-        "touchstart",
-      ]
-    }
-    excludeScrollbar={false}
+  <PopUpTopTracks
     isOpen={false}
-    outsideClickIgnoreClass="ignore-react-onclickoutside"
-    preventDefault={false}
-    stopPropagation={false}
     togglePopUp={[Function]}
-  >
-    <div>
-      <h1>
-        Top Tracks list
-      </h1>
-      <p>
-        description...
-      </p>
-    </div>
-  </OnClickOutside(PopUpContainer)>
+  />
 </div>
 `;
