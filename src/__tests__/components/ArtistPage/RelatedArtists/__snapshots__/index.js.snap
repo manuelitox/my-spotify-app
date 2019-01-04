@@ -53,29 +53,10 @@ exports[`Component | RelatedArtists should render a component 1`] = `
     >
       view related artists
     </Button>
-    <OnClickOutside(PopUpContainer)
-      eventTypes={
-        Array [
-          "mousedown",
-          "touchstart",
-        ]
-      }
-      excludeScrollbar={false}
+    <PopUpRelatedArtists
       isOpen={false}
-      outsideClickIgnoreClass="ignore-react-onclickoutside"
-      preventDefault={false}
-      stopPropagation={false}
       togglePopUp={[Function]}
-    >
-      <div>
-        <h1>
-          Related Artists list
-        </h1>
-        <p>
-          description...
-        </p>
-      </div>
-    </OnClickOutside(PopUpContainer)>
+    />
   </Component>
 </styled.div>
 `;
