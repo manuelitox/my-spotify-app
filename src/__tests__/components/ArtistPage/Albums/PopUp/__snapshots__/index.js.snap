@@ -1,11 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component | Albums should render a component 1`] = `
-<div>
-  <Title>
+exports[`Component | PopUpAlbums should render a component 1`] = `
+<OnClickOutside(PopUpContainer)
+  eventTypes={
+    Array [
+      "mousedown",
+      "touchstart",
+    ]
+  }
+  excludeScrollbar={false}
+  isOpen={true}
+  outsideClickIgnoreClass="ignore-react-onclickoutside"
+  preventDefault={false}
+  stopPropagation={false}
+  togglePopUp={[MockFunction]}
+>
+  <Title
+    color="#262D45"
+    insidePopUp={true}
+  >
     Albums
   </Title>
-  <styled.div>
+  <styled.div
+    inPopup={true}
+  >
     <Album
       numberTracks={12}
       releaseDate="2016-06-17"
@@ -37,14 +55,5 @@ exports[`Component | Albums should render a component 1`] = `
       title="Hallelujah"
     />
   </styled.div>
-  <Button
-    onClick={[Function]}
-  >
-    view more albums
-  </Button>
-  <PopUpAlbums
-    isOpen={false}
-    togglePopUp={[Function]}
-  />
-</div>
+</OnClickOutside(PopUpContainer)>
 `;
