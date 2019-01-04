@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 import theme from 'config/theme'
-import PopUp from 'components/generic/PopUp/container'
 import Title from 'components/ArtistPage/Title/'
 import Button from 'components/generic/Button/'
 import Artist from './Artist/'
+import PopUpRelatedArtists from './PopUp/'
 import StyledRelatedArtists from './styles'
 import StyledWrapperRelatedArtists from './styles-wrapper'
 import StyledContainerRelatedArtists from './styles-container'
@@ -36,12 +36,7 @@ class RelatedArtists extends Component {
             onClick={ this.togglePopUp }>
             view related artists
           </Button>
-          <PopUp isOpen={ this.state.isOpen } togglePopUp={ this.togglePopUp }>
-            <div>
-              <h1>Related Artists list</h1>
-              <p>description...</p>
-            </div>
-          </PopUp>          
+          <PopUpRelatedArtists isOpen={ this.state.isOpen } togglePopUp={ this.togglePopUp } />
         </StyledContainerRelatedArtists>
       </StyledRelatedArtists>
     )

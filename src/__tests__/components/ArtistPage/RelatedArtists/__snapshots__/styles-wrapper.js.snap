@@ -12,7 +12,9 @@ exports[`Component | StyledWrapperRelatedArtists should render a styled componen
         "rules": Array [
           "
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: ",
+          [Function],
+          ";
   grid-gap: 30px;
   margin: 0 0 20px;
   @media only screen and (max-width: ",
@@ -30,6 +32,9 @@ exports[`Component | StyledWrapperRelatedArtists should render a styled componen
       },
       "displayName": "styled.div",
       "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "inPopup": [Function],
+      },
       "render": [Function],
       "styledComponentId": "sc-bdVaJa",
       "target": "div",

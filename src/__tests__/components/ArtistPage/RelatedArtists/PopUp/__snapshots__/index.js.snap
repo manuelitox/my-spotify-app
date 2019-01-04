@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | PopUpRelatedArtists should render a component 1`] = `
+<OnClickOutside(PopUpContainer)
+  eventTypes={
+    Array [
+      "mousedown",
+      "touchstart",
+    ]
+  }
+  excludeScrollbar={false}
+  isOpen={true}
+  outsideClickIgnoreClass="ignore-react-onclickoutside"
+  preventDefault={false}
+  stopPropagation={false}
+  togglePopUp={[MockFunction]}
+>
+  <Title
+    color="#262D45"
+    insidePopUp={true}
+  >
+    Related Artists
+  </Title>
+  <styled.div
+    inPopup={true}
+    onClick={[MockFunction]}
+  >
+    <Artist
+      id="1"
+      name="Martin Abasto"
+    />
+    <Artist
+      id="2"
+      name="Bairam Frootan"
+    />
+    <Artist
+      id="3"
+      name="Emmalynn Mazzia"
+    />
+    <Artist
+      id="4"
+      name="Gabriel Pires"
+    />
+    <Artist
+      id="5"
+      name="Irene Sotelo"
+    />
+    <Artist
+      id="6"
+      name="Oea Romana"
+    />
+    <Artist
+      id="7"
+      name="Pin Jung-Eym"
+    />
+    <Artist
+      id="8"
+      name="Udom Paowsong"
+    />
+    <Artist
+      id="9"
+      name="John Doe"
+    />
+  </styled.div>
+</OnClickOutside(PopUpContainer)>
+`;
