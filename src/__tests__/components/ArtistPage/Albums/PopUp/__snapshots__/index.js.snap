@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | PopUpAlbums should render a component 1`] = `
+<OnClickOutside(PopUpContainer)
+  eventTypes={
+    Array [
+      "mousedown",
+      "touchstart",
+    ]
+  }
+  excludeScrollbar={false}
+  isOpen={true}
+  outsideClickIgnoreClass="ignore-react-onclickoutside"
+  preventDefault={false}
+  stopPropagation={false}
+  togglePopUp={[MockFunction]}
+>
+  <Title
+    color="#262D45"
+    insidePopUp={true}
+  >
+    Albums
+  </Title>
+  <styled.div
+    inPopup={true}
+  >
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+    <Album
+      numberTracks={12}
+      releaseDate="2016-06-17"
+      title="Hallelujah"
+    />
+  </styled.div>
+</OnClickOutside(PopUpContainer)>
+`;
