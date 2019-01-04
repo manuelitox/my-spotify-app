@@ -42,28 +42,9 @@ exports[`Component | Albums should render a component 1`] = `
   >
     view more albums
   </Button>
-  <OnClickOutside(PopUpContainer)
-    eventTypes={
-      Array [
-        "mousedown",
-        "touchstart",
-      ]
-    }
-    excludeScrollbar={false}
+  <PopUpAlbums
     isOpen={false}
-    outsideClickIgnoreClass="ignore-react-onclickoutside"
-    preventDefault={false}
-    stopPropagation={false}
     togglePopUp={[Function]}
-  >
-    <div>
-      <h1>
-        Albums list
-      </h1>
-      <p>
-        description...
-      </p>
-    </div>
-  </OnClickOutside(PopUpContainer)>
+  />
 </div>
 `;
