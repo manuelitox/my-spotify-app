@@ -2,12 +2,43 @@
 
 exports[`Component | SearchFormContainer should render a component 1`] = `
 <SearchForm
+  artistsSearch={[MockFunction]}
   closeSuggestions={[Function]}
+  data={
+    Array [
+      Object {
+        "id": "1",
+        "name": "Alicia Keys",
+      },
+      Object {
+        "id": "2",
+        "name": "Queen",
+      },
+      Object {
+        "id": "3",
+        "name": "John Mayer",
+      },
+      Object {
+        "id": "4",
+        "name": "ACDC",
+      },
+      Object {
+        "id": "5",
+        "name": "Blink 182",
+      },
+      Object {
+        "id": "6",
+        "name": "Bon Jovi",
+      },
+      Object {
+        "id": "7",
+        "name": "2pac",
+      },
+    ]
+  }
   isOpen={false}
-  loading={false}
   onChange={[Function]}
   openSuggestions={[Function]}
   placeholder="search an artist..."
-  suggestions={Array []}
 />
 `;

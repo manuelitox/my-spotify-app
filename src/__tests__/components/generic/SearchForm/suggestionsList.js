@@ -6,17 +6,17 @@ import SuggestionsList from 'components/generic/SearchForm/suggestionsList'
 
 describe('Component | SuggestionsList', () => {
   const SUGGESTIONS = [
-    { id: '1', name: 'Alicia Keys' },
-    { id: '2', name: 'Queen' },
-    { id: '3', name: 'John Mayer' },
-    { id: '4', name: 'ACDC' },
-    { id: '5', name: 'Blink 182' },
-    { id: '6', name: 'Bon Jovi' },
-    { id: '7', name: '2pac' }          
+    { id: '1', name: 'Alicia Keys', images: [] },
+    { id: '2', name: 'Queen', images: [] },
+    { id: '3', name: 'John Mayer', images: [] },
+    { id: '4', name: 'ACDC', images: [] },
+    { id: '5', name: 'Blink 182', images: [] },
+    { id: '6', name: 'Bon Jovi', images: [] },
+    { id: '7', name: '2pac', images: [] }          
   ]
   let component 
   beforeEach( () => {
-    component = shallow(<SuggestionsList isOpen suggestions={ SUGGESTIONS } numberOfArtists={ 4 } closeSuggestions={ jest.fn() } />)
+    component = shallow(<SuggestionsList isOpen data={ SUGGESTIONS } numberOfArtists={ 4 } closeSuggestions={ jest.fn() } />)
   })
   it('should render a component', () => {
     expect(component).toMatchSnapshot()

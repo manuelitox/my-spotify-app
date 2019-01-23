@@ -7,19 +7,19 @@ import PlaceholderArtist from 'svgs/placeholderArtist.svg'
 import StyledSuggestionsList from './stylesSuggestionsList'
 
 const SuggestionsList = ({
+  data,
   isOpen,
-  suggestions,
   numberOfArtists,
   closeSuggestions
 }) => (
   isOpen && numberOfArtists >= 1 && 
     <StyledSuggestionsList>
-      { suggestions.map( suggestion => (
+      { data.map( suggestion => (
         <li key={ suggestion.id }>
           <Link onClick={ closeSuggestions } to={ `/artist/${ NameWithOutSpaces(suggestion.name) }/${ suggestion.id }` }>
             <img 
               alt={ suggestion.name }
-              src={ suggestion.photo ? suggestion.photo : PlaceholderArtist } 
+              src={ suggestion.images.length >= 1 ? suggestion.images[0].url : PlaceholderArtist } 
               width="40"
               height="40" />
             { suggestion.name }
@@ -31,10 +31,14 @@ const SuggestionsList = ({
 
 SuggestionsList.propTypes = {
   isOpen: PropTypes.bool,
-  suggestions: PropTypes.arrayOf(PropTypes.shape({
+  data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    photo: PropTypes.string
+    images: PropTypes.arrayOf(PropTypes.shape({
+      url: PropTypes.string.isRequired,
+      width: PropTypes.number.isRequired,
+      height: PropTypes.number.isRequired
+    }))
   })),
   numberOfArtists: PropTypes.number,
   closeSuggestions: PropTypes.func.isRequired
