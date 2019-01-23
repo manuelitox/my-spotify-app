@@ -1,8 +1,7 @@
-import axios from "axios"
-
 import { domain } from 'config/api'
 import * as constants from 'constants/search'
 import makeActionCreator from 'lib/make-action-creator'
+import axiosAuthMiddleware from 'lib/axios-auth-middleware'
 
 // Actions creators:
 // -----------------
@@ -19,7 +18,7 @@ export const artistsSearch = query => {
   }
   return dispatch => {
     dispatch(searchPending())
-    axios.get(`${domain}search?q=${query}&type=artist&limit=20&offset=5`, { headers })
+    axiosAuthMiddleware.get(`${domain}search?q=${query}&type=artist&limit=20&offset=5`, { headers })
     .then(response => dispatch(searchSuccessFully(response.data.artists.items)))
     .catch(error => dispatch(searchRejected(error.response.data.error)))
   }
