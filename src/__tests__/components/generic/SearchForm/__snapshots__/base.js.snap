@@ -15,8 +15,7 @@ exports[`Component | SearchForm should render a component 1`] = `
   />
   <SuggestionsList
     closeSuggestions={[MockFunction]}
-    numberOfArtists={7}
-    suggestions={
+    data={
       Array [
         Object {
           "id": "1",
@@ -48,6 +47,7 @@ exports[`Component | SearchForm should render a component 1`] = `
         },
       ]
     }
+    numberOfArtists={7}
   />
 </styled.div>
 `;

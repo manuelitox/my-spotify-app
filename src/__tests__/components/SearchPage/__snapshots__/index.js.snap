@@ -4,18 +4,7 @@ exports[`Component | SearchPage should render a component 1`] = `
 <Fragment>
   <styled.div>
     <ReactComponent />
-    <OnClickOutside(SearchFormContainer)
-      eventTypes={
-        Array [
-          "mousedown",
-          "touchstart",
-        ]
-      }
-      excludeScrollbar={false}
-      outsideClickIgnoreClass="ignore-react-onclickoutside"
-      preventDefault={false}
-      stopPropagation={false}
-    />
+    <Connect(OnClickOutside(SearchFormContainer)) />
   </styled.div>
   <Styled(ReactComponent) />
 </Fragment>

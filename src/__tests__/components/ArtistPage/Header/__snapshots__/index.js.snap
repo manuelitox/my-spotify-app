@@ -12,18 +12,8 @@ exports[`Component | Header should render a component 1`] = `
       width="55"
     />
   </Link>
-  <OnClickOutside(SearchFormContainer)
-    eventTypes={
-      Array [
-        "mousedown",
-        "touchstart",
-      ]
-    }
-    excludeScrollbar={false}
-    outsideClickIgnoreClass="ignore-react-onclickoutside"
+  <Connect(OnClickOutside(SearchFormContainer))
     placeholder="search another artist..."
-    preventDefault={false}
-    stopPropagation={false}
   />
 </styled.div>
 `;
