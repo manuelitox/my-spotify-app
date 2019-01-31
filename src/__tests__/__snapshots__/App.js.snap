@@ -4,6 +4,7 @@ exports[`Component | App should render an App 1`] = `
 <ThemeProvider
   theme={
     Object {
+      "SpotifyColor": "#1DB954",
       "blueDark": "#262D45",
       "blueDarkText": "#A8A9C1",
       "blueLight": "#3D4EC9",

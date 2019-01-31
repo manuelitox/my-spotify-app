@@ -10,6 +10,7 @@ const theme = {
   offWhite: '#999999',
   shadow: 'rgba(0, 0, 0, .7)',
   playIcon: '#41475d',
+  SpotifyColor: '#1DB954',
   size: {
     medium: '990px',
     small: '760px'
