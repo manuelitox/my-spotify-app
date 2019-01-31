@@ -12,6 +12,10 @@ export class PopUpContainer extends Component {
   }
 }
 
+PopUpContainer.defaultProps = {
+  WithCloseButton: true
+}
+
 PopUpContainer.propTypes = {
   width: PropTypes.string, 
   isOpen: PropTypes.bool,
@@ -20,7 +24,8 @@ PopUpContainer.propTypes = {
     PropTypes.string,
     PropTypes.object
   ]),
-  togglePopUp: PropTypes.func.isRequired
+  togglePopUp: PropTypes.func.isRequired,
+  WithCloseButton: PropTypes.bool
 }
 
 export default onClickOutside(PopUpContainer)

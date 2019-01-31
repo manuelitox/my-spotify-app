@@ -8,7 +8,7 @@ describe('Component | PopUp', () => {
   let component 
   beforeEach( () => {
     component = shallow(
-      <PopUp togglePopUp={ jest.fn() }>
+      <PopUp togglePopUp={ jest.fn() } WithCloseButton={ true }>
         <p>PopUp!!</p>
       </PopUp>
     )
