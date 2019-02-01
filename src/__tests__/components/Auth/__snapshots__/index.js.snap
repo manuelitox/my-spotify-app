@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | Auth Token exists should not render Auth component 1`] = `""`;
+
+exports[`Component | Auth should render a component 1`] = `<AuthPopUp />`;

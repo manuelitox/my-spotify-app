@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | AuthPopUp should render a component 1`] = `
+<OnClickOutside(PopUpContainer)
+  WithCloseButton={false}
+  eventTypes={
+    Array [
+      "mousedown",
+      "touchstart",
+    ]
+  }
+  excludeScrollbar={false}
+  isOpen={true}
+  outsideClickIgnoreClass="ignore-react-onclickoutside"
+  preventDefault={false}
+  stopPropagation={false}
+  togglePopUp={[Function]}
+>
+  <Title
+    color="#262D45"
+    insidePopUp={true}
+  >
+    Spotify Authorization
+  </Title>
+  <styled.div>
+    <a
+      href="https://accounts.spotify.com/authorize?client_id=undefined&redirect_uri=undefined&scope=user-read-private%20user-read-email&response_type=token&state=123"
+    >
+      Get Authorization
+    </a>
+    <p>
+      <small>
+        You need to login into Spotify
+      </small>
+    </p>
+  </styled.div>
+</OnClickOutside(PopUpContainer)>
+`;
