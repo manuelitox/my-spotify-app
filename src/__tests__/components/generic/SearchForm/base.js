@@ -19,6 +19,7 @@ describe('Component | SearchForm', () => {
     component = shallow(
       <SearchForm  
         data={ SUGGESTIONS }
+        token="access_token123123"
         onChange={ jest.fn() }
         placeholder="search an artist"
         openSuggestions={ jest.fn() }

@@ -14,9 +14,10 @@ describe('Component | SuggestionsList', () => {
     { id: '6', name: 'Bon Jovi', images: [] },
     { id: '7', name: '2pac', images: [] }          
   ]
+  const token = 'access_token123123'
   let component 
   beforeEach( () => {
-    component = shallow(<SuggestionsList isOpen data={ SUGGESTIONS } numberOfArtists={ 4 } closeSuggestions={ jest.fn() } />)
+    component = shallow(<SuggestionsList isOpen data={ SUGGESTIONS } numberOfArtists={ 4 } closeSuggestions={ jest.fn() } token={ token } />)
   })
   it('should render a component', () => {
     expect(component).toMatchSnapshot()
@@ -24,7 +25,7 @@ describe('Component | SuggestionsList', () => {
   it('should display the `To` parameter of the first Link', () => {
     // replace the spaces ' ' to '-' into the Artist name.
     const to = component.find(Link).at(0).props().to
-    expect(to).toEqual('/artist/Alicia-Keys/1')
+    expect(to).toEqual({ pathname: '/artist/Alicia-Keys/1', search: '?#access_token=access_token123123' })
   })
   it('should render null because isOpen is false', () => {
     component = shallow(<SuggestionsList isOpen={ false } closeSuggestions={ jest.fn() } />)    

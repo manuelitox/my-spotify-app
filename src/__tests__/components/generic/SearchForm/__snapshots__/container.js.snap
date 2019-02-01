@@ -40,5 +40,6 @@ exports[`Component | SearchFormContainer should render a component 1`] = `
   onChange={[Function]}
   openSuggestions={[Function]}
   placeholder="search an artist..."
+  token="access_token123123"
 />
 `;
