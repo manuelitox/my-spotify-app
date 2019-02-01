@@ -3,6 +3,8 @@ import * as constants from 'constants/search'
 import makeActionCreator from 'lib/make-action-creator'
 import axiosAuthMiddleware from 'lib/axios-auth-middleware'
 
+import { authUpdate } from './auth'
+
 // Actions creators:
 // -----------------
 export const searchPending = makeActionCreator(constants.SEARCH_PENDING)
@@ -11,15 +13,15 @@ export const searchSuccessFully = makeActionCreator(constants.SEARCH_SUCCESSFULL
 
 // async actions:
 // --------------
-export const artistsSearch = query => {
+export const artistsSearch = (query, token) => {
   const headers = {
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${ process.env.REACT_APP_SPOTIFY_KEY }`
+    'Authorization': `Bearer ${ token }`
   }
   return dispatch => {
     dispatch(searchPending())
     axiosAuthMiddleware.get(`${domain}search?q=${query}&type=artist&limit=20&offset=5`, { headers })
     .then(response => dispatch(searchSuccessFully(response.data.artists.items)))
-    .catch(error => dispatch(searchRejected(error.response.data.error)))
+    .catch(error => dispatch(authUpdate('')))
   }
 }
