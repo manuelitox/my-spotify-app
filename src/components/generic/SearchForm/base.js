@@ -10,6 +10,7 @@ import ArtistMatchesCounter from './artistsCounter'
 
 const SearchForm = ({ 
   data,
+  token,
   isOpen,
   loading,
   onChange,
@@ -27,12 +28,13 @@ const SearchForm = ({
       placeholder={ placeholder } />
     <LoadingMessage loading={ loading } />
     <ArtistMatchesCounter isOpen={ isOpen } loading={ loading } numberOfArtists={ data.length } />
-    <SuggestionsList isOpen={ isOpen } numberOfArtists={ data.length } data={ data } closeSuggestions={ closeSuggestions } />
+    <SuggestionsList isOpen={ isOpen } numberOfArtists={ data.length } data={ data } closeSuggestions={ closeSuggestions } token={ token } />
   </StyledSearchForm>
 )  
 
 SearchForm.propTypes = {
   data: PropTypes.array.isRequired,
+  token: PropTypes.string,
   isOpen: PropTypes.bool,
   loading: PropTypes.bool,
   onChange: PropTypes.func.isRequired,

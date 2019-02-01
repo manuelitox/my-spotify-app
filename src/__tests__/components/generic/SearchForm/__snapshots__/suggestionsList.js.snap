@@ -8,7 +8,12 @@ exports[`Component | SuggestionsList should render a component 1`] = `
     <Link
       onClick={[MockFunction]}
       replace={false}
-      to="/artist/Alicia-Keys/1"
+      to={
+        Object {
+          "pathname": "/artist/Alicia-Keys/1",
+          "search": "?#access_token=access_token123123",
+        }
+      }
     >
       <img
         alt="Alicia Keys"
@@ -25,7 +30,12 @@ exports[`Component | SuggestionsList should render a component 1`] = `
     <Link
       onClick={[MockFunction]}
       replace={false}
-      to="/artist/Queen/2"
+      to={
+        Object {
+          "pathname": "/artist/Queen/2",
+          "search": "?#access_token=access_token123123",
+        }
+      }
     >
       <img
         alt="Queen"
@@ -42,7 +52,12 @@ exports[`Component | SuggestionsList should render a component 1`] = `
     <Link
       onClick={[MockFunction]}
       replace={false}
-      to="/artist/John-Mayer/3"
+      to={
+        Object {
+          "pathname": "/artist/John-Mayer/3",
+          "search": "?#access_token=access_token123123",
+        }
+      }
     >
       <img
         alt="John Mayer"
@@ -59,7 +74,12 @@ exports[`Component | SuggestionsList should render a component 1`] = `
     <Link
       onClick={[MockFunction]}
       replace={false}
-      to="/artist/ACDC/4"
+      to={
+        Object {
+          "pathname": "/artist/ACDC/4",
+          "search": "?#access_token=access_token123123",
+        }
+      }
     >
       <img
         alt="ACDC"
@@ -76,7 +96,12 @@ exports[`Component | SuggestionsList should render a component 1`] = `
     <Link
       onClick={[MockFunction]}
       replace={false}
-      to="/artist/Blink-182/5"
+      to={
+        Object {
+          "pathname": "/artist/Blink-182/5",
+          "search": "?#access_token=access_token123123",
+        }
+      }
     >
       <img
         alt="Blink 182"
@@ -93,7 +118,12 @@ exports[`Component | SuggestionsList should render a component 1`] = `
     <Link
       onClick={[MockFunction]}
       replace={false}
-      to="/artist/Bon-Jovi/6"
+      to={
+        Object {
+          "pathname": "/artist/Bon-Jovi/6",
+          "search": "?#access_token=access_token123123",
+        }
+      }
     >
       <img
         alt="Bon Jovi"
@@ -110,7 +140,12 @@ exports[`Component | SuggestionsList should render a component 1`] = `
     <Link
       onClick={[MockFunction]}
       replace={false}
-      to="/artist/2pac/7"
+      to={
+        Object {
+          "pathname": "/artist/2pac/7",
+          "search": "?#access_token=access_token123123",
+        }
+      }
     >
       <img
         alt="2pac"

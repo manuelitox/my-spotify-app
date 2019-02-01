@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Provider } from 'react-redux'
 import { Router, Route, Switch } from 'react-router-dom'
 
+import Auth from 'components/Auth/'
 import store from 'store'
 import history from './history'
 import Footer from 'components/generic/Footer/'
@@ -18,6 +19,7 @@ const Routers = () => (
             <Route exact path="/artist/:artistName/:artistId" component={ ArtistPage } />
           </Switch>
         </main>
+        <Route path="/" component={ Auth } />
         <Route path="/" component={ Footer } />
       </Fragment>
     </Router>

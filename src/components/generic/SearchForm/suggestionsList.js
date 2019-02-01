@@ -8,6 +8,7 @@ import StyledSuggestionsList from './stylesSuggestionsList'
 
 const SuggestionsList = ({
   data,
+  token,
   isOpen,
   numberOfArtists,
   closeSuggestions
@@ -16,7 +17,7 @@ const SuggestionsList = ({
     <StyledSuggestionsList>
       { data.map( suggestion => (
         <li key={ suggestion.id }>
-          <Link onClick={ closeSuggestions } to={ `/artist/${ NameWithOutSpaces(suggestion.name) }/${ suggestion.id }` }>
+          <Link onClick={ closeSuggestions } to={{  pathname: `/artist/${ NameWithOutSpaces(suggestion.name) }/${ suggestion.id }`, search: `?#access_token=${ token }`  }}>
             <img 
               alt={ suggestion.name }
               src={ suggestion.images.length >= 1 ? suggestion.images[0].url : PlaceholderArtist } 
@@ -40,6 +41,7 @@ SuggestionsList.propTypes = {
       height: PropTypes.number.isRequired
     }))
   })),
+  token: PropTypes.string,
   numberOfArtists: PropTypes.number,
   closeSuggestions: PropTypes.func.isRequired
 }

@@ -18,6 +18,7 @@ describe('Component | SearchFormContainer', () => {
     component = shallow(
       <SearchFormContainer
         data={ SUGGESTIONS }
+        token="access_token123123"
         artistsSearch={ jest.fn() } />
     )
   })

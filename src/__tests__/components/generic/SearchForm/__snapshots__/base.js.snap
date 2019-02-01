@@ -48,6 +48,7 @@ exports[`Component | SearchForm should render a component 1`] = `
       ]
     }
     numberOfArtists={7}
+    token="access_token123123"
   />
 </styled.div>
 `;

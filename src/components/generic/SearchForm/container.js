@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import onClickOutside from 'react-onclickoutside'
 import { connect } from 'react-redux'
 
-import { artistsSearch } from 'actions/'
-
 import SearchForm from './base'
+import { artistsSearch } from 'actions/'
 
 export class SearchFormContainer extends Component {
   state = {
@@ -24,9 +23,9 @@ export class SearchFormContainer extends Component {
   closeSuggestions = () => this.setState({ isOpen: false })
 
   onChange = e => {
-    const { artistsSearch } = this.props
+    const { artistsSearch, token } = this.props
     this.setState({ isOpen: true })
-    artistsSearch(e.target.value)
+    artistsSearch(e.target.value, token)
   }
 
   render () {
@@ -47,6 +46,7 @@ SearchFormContainer.defaultProps = {
 }
 
 SearchFormContainer.propTypes = {
+  token: PropTypes.string,
   placeholder: PropTypes.string,
   artistsSearch: PropTypes.func.isRequired
 }
@@ -55,7 +55,8 @@ const OnClickWrapperSearchFormContainer = onClickOutside(SearchFormContainer)
 
 const mapStateToProps = (state) => ({
   data: state.SearchReducer.data,
-  loading : state.SearchReducer.loading
+  token: state.AuthReducer.token,
+  loading : state.SearchReducer.loading,
 })
 
 export default connect(
