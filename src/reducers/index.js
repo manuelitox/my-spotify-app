@@ -3,11 +3,13 @@ import { routerReducer } from 'react-router-redux'
 
 import AuthReducer from './auth'
 import SearchReducer from './search'
+import ArtistReducer from './artist'
 
 const appReducer = combineReducers({
   routing : routerReducer,
   AuthReducer,
-  SearchReducer
+  SearchReducer,
+  ArtistReducer
 })
 
 const rootReducer = (state, action) => {
