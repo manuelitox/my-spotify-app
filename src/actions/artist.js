@@ -13,6 +13,7 @@ export const artistSuccessFully = makeActionCreator(constants.ARTIST_SUCCESSFULL
 export const artistsAlbumsSuccessFully = makeActionCreator(constants.ARTISTS_ALBUMS_SUCCESSFULLY, 'albums')
 export const artistsTopTracksSuccessFully = makeActionCreator(constants.ARTISTS_TOP_TRACKS_SUCCESSFULLY, 'tracks')
 export const artistsRelatedSuccessFully = makeActionCreator(constants.ARTISTS_RELATED_SUCCESSFULLY, 'artists')
+export const artistsAlbumsTracksSuccessFully = makeActionCreator(constants.ARTISTS_ALBUMS_TRACKS_SUCCESSFULLY, 'tracks')
 
 // async actions:
 // --------------
@@ -43,6 +44,19 @@ export const getArtistsAlbums = (id, token) => {
     dispatch(artistPending())
     axiosAuthMiddleware.get(`${domain}artists/${ id }/albums?limit=50`, { headers })
     .then(response => dispatch(artistsAlbumsSuccessFully(response.data)))
+    .catch(error => dispatch(authUpdate('')))
+  }
+}
+
+export const getArtistsAlbumsTracks = (id, token) => {
+  const headers = {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${ token }`
+  }
+  return dispatch => {
+    dispatch(artistPending())
+    axiosAuthMiddleware.get(`${domain}albums/${ id }/tracks`, { headers })
+    .then(response => dispatch(artistsAlbumsTracksSuccessFully(response.data)))
     .catch(error => dispatch(authUpdate('')))
   }
 }

@@ -37,5 +37,11 @@ describe('Actions | Artist', () => {
     action   = ActionCreator.artistsRelatedSuccessFully(artists)
     expected = { type : constants.ARTISTS_RELATED_SUCCESSFULLY, artists }
     expect(action).toEqual(expected)
-  })    
+  })   
+  it('artistsRelatedSuccessFully | should return an object', () => {
+    const tracks = {}
+    action   = ActionCreator.artistsAlbumsTracksSuccessFully(tracks)
+    expected = { type : constants.ARTISTS_ALBUMS_TRACKS_SUCCESSFULLY, tracks }
+    expect(action).toEqual(expected)
+  })      
 })
