@@ -7,6 +7,7 @@ const initialState = {
     genres: []
   },
   albums: {},
+  albumsTracks: {},
   topTracks: {},
   relatedArtists: {},
   error: null,
@@ -17,7 +18,7 @@ const ArtistReducer = (
   state = initialState, 
   action 
 ) => {
-  let info, error, loading, albums, topTracks, relatedArtists
+  let info, error, loading, albums, topTracks, relatedArtists, albumsTracks
   switch ( action.type ) {
     case constants.ARTIST_PENDING:
       loading = true      
@@ -42,6 +43,16 @@ const ArtistReducer = (
       return {
         ...state,
         albums,
+        error,
+        loading
+      }
+    case constants.ARTISTS_ALBUMS_TRACKS_SUCCESSFULLY: 
+      albumsTracks = action.tracks 
+      error = null 
+      loading = false 
+      return {
+        ...state,
+        albumsTracks,
         error,
         loading
       }

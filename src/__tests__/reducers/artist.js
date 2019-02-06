@@ -11,6 +11,7 @@ describe('Reducer | Artist', () => {
         genres: []
       },
       albums: {},
+      albumsTracks: {},
       topTracks: {},
       relatedArtists: {},
       error: null,
@@ -48,6 +49,16 @@ describe('Reducer | Artist', () => {
     newState = ArtistReducer( undefined, action )
     expect(stateExpected).toEqual(newState)
   }) 
+
+  it('Action Type | ARTISTS_ALBUMS_TRACKS_SUCCESSFULLY', () => {
+    const tracks = { items: [] }
+    stateExpected.loading = false
+    stateExpected.albumsTracks = tracks
+    action   = ActionCreator.artistsAlbumsTracksSuccessFully(tracks)
+    newState = ArtistReducer( undefined, action )
+    expect(stateExpected).toEqual(newState)
+  }) 
+
   it('Action Type | ARTISTS_TOP_TRACKS_SUCCESSFULLY', () => {
     const topTracks = { tracks: [] }
     stateExpected.loading = false
