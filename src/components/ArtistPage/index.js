@@ -1,23 +1,45 @@
-import React from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
  
-import Header from './Header/'
-import Banner from './Banner/'
-import Albums from './Albums/'
-import Tracks from './Tracks/'
-import RelatedArtists from './RelatedArtists/'
-import StyledArtistPage from './styles'
-import StyledContainerAlbumsAndTopTracks from './stylesContainerAlbumsAndTopTracks'
+import { getArtist } from 'actions/artist'
+import StatelessArtistPage from './base'
+ 
+export class ArtistPage extends Component {
+  componentDidMount() {
+    const { getArtist, match, token } = this.props
+    if (token) {
+      getArtist(match.params.artistId, token)
+    }
+  }
 
-const ArtistPage = () => (
-  <StyledArtistPage>
-    <Header />
-    <Banner />
-    <StyledContainerAlbumsAndTopTracks>
-      <Albums />
-      <Tracks />
-    </StyledContainerAlbumsAndTopTracks>
-    <RelatedArtists />
-  </StyledArtistPage>
-)
+  componentDidUpdate(prevProps) {
+    const { getArtist, match, token } = this.props
+    if (prevProps.token !== token) {
+      getArtist(match.params.artistId, token)
+    }
+    if (token && prevProps.match !== match) {
+      getArtist(match.params.artistId, token)
+    }
+  }
 
-export default ArtistPage
+  render() {
+    return <StatelessArtistPage />
+  }
+}
+
+ArtistPage.propTypes = {
+  token: PropTypes.string,
+  loading: PropTypes.bool,
+  getArtist: PropTypes.func.isRequired
+}
+
+const mapStateToProps = (state) => ({
+  token: state.AuthReducer.token,
+  loading: state.ArtistReducer.loading
+})
+
+export default connect(
+  mapStateToProps,
+  { getArtist }
+)(ArtistPage)

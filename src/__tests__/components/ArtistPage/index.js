@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import ArtistPage from 'components/ArtistPage/'
+import { ArtistPage } from 'components/ArtistPage/'
 
 describe('Component | ArtistPage', () => {
   let component 
   beforeEach( () => {
     component = shallow(
-      <ArtistPage />
+      <ArtistPage getArtist={ jest.fn() } />
     )
   })
   it('should render a component', () => {

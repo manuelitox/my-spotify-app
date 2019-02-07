@@ -25,34 +25,12 @@ exports[`Component | PopUpAlbums should render a component 1`] = `
     inPopup={true}
   >
     <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
+      cover="path/to/image.jpg"
+      id="123abc"
+      key="0"
+      numberTracks={11}
+      releaseDate="11/11/2019"
+      title="album name"
     />
   </styled.div>
 </OnClickOutside(PopUpContainer)>

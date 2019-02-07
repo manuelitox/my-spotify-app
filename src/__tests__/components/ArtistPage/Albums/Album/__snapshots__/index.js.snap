@@ -8,7 +8,7 @@ exports[`Component | Album should render a component 1`] = `
     <img
       alt="album title"
       height="60"
-      src="placeholderAlbum.svg"
+      src="path/to/image.png"
       width="60"
     />
     <div>
@@ -25,7 +25,9 @@ exports[`Component | Album should render a component 1`] = `
       </p>
     </div>
   </styled.div>
-  <PopUpAlbum
+  <Connect(PopUpAlbum)
+    albumId={null}
+    cover="path/to/image.png"
     isOpen={false}
     numberTracks={10}
     releaseDate="2016-04-07"

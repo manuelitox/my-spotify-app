@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import moment from 'moment'
 
 import StyledTrack from './styles'
 import { ReactComponent as PlayIcon } from 'svgs/play.svg'
@@ -27,7 +28,7 @@ class Track extends Component {
         { play ? <PauseIcon /> : <PlayIcon /> }
         <div>
           <h4>{ name }</h4>
-          { isPopUpVersion ? <p>{ duration } { songIsAvailable && '- listen to the preview' }</p> : <p>Release date: { releaseDate }</p> }          
+          { isPopUpVersion ? <p>{ moment(duration).format('m:ss') } min { songIsAvailable && '- listen to the preview' }</p> : <p>Release date: { releaseDate }</p> }          
         </div>
       </StyledTrack>
     )
@@ -36,7 +37,7 @@ class Track extends Component {
 
 Track.propTypes = {
   name: PropTypes.string.isRequired,
-  duration: PropTypes.string,
+  duration: PropTypes.number,
   previewUrl: PropTypes.string,
   releaseDate: PropTypes.string,
   isPopUpVersion: PropTypes.bool,

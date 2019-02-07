@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component | StatelessArtistPage should render a component 1`] = `
+<styled.div>
+  <Header />
+  <Banner />
+  <Component>
+    <Connect(Albums) />
+    <Connect(Tracks) />
+  </Component>
+  <Connect(RelatedArtists) />
+</styled.div>
+`;

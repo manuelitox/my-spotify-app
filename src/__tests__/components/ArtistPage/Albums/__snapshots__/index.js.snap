@@ -7,34 +7,12 @@ exports[`Component | Albums should render a component 1`] = `
   </Title>
   <styled.div>
     <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
-    />
-    <Album
-      numberTracks={12}
-      releaseDate="2016-06-17"
-      title="Hallelujah"
+      cover="path/to/image.jpg"
+      id="123abc"
+      key="0"
+      numberTracks={11}
+      releaseDate="11/11/2019"
+      title="album name"
     />
   </styled.div>
   <Button
@@ -43,6 +21,22 @@ exports[`Component | Albums should render a component 1`] = `
     view more albums
   </Button>
   <PopUpAlbums
+    albums={
+      Array [
+        Object {
+          "id": "123abc",
+          "images": Array [
+            Object {
+              "height": 300,
+              "url": "path/to/image.jpg",
+            },
+          ],
+          "name": "album name",
+          "release_date": "11/11/2019",
+          "total_tracks": 11,
+        },
+      ]
+    }
     isOpen={false}
     togglePopUp={[Function]}
   />

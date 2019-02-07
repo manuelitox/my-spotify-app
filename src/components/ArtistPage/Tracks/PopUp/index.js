@@ -7,47 +7,20 @@ import Track from 'components/generic/Track/'
 import PopUp from 'components/generic/PopUp/container'
 import StylesWrapperTracks from 'components/ArtistPage/stylesWrapperTracks'
 
-const PopUpTopTracks = ({ isOpen, togglePopUp }) => (
+const PopUpTopTracks = ({ isOpen, togglePopUp, tracks }) => (
   <PopUp isOpen={ isOpen } togglePopUp={ togglePopUp }>
     <Fragment>
       <Title color={ theme.blueDark } insidePopUp={ true }>Top Tracks</Title>
       <StylesWrapperTracks>
-        <Track 
-          name="Empire State of Mind" 
-          duration="3 min"
-          previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-          isPopUpVersion
-          songIsAvailable />
-        <Track 
-          name="No one" 
-          duration="4 min"
-          previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-          isPopUpVersion
-          songIsAvailable />
-        <Track 
-          name="Girl of Fire" 
-          duration="3:23 min"
-          previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-          isPopUpVersion
-          songIsAvailable />    
-        <Track 
-          name="Fallin'" 
-          duration="5:42 min"
-          previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-          isPopUpVersion
-          songIsAvailable />
-        <Track 
-          name="Girl of Fire" 
-          duration="3:23 min"
-          previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-          isPopUpVersion
-          songIsAvailable />    
-        <Track 
-          name="Fallin'" 
-          duration="5:42 min"
-          previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-          isPopUpVersion
-          songIsAvailable />                
+        { tracks.map(track => (
+          <Track 
+            key={ track.id }
+            name={ track.name }
+            duration={ track.duration_ms }
+            previewUrl={ track.preview_url }
+            isPopUpVersion
+            songIsAvailable={ track.is_playable } />
+        )) }               
       </StylesWrapperTracks>
     </Fragment>
   </PopUp>      
@@ -55,7 +28,19 @@ const PopUpTopTracks = ({ isOpen, togglePopUp }) => (
 
 PopUpTopTracks.propTypes = {
   isOpen: PropTypes.bool,
-  togglePopUp: PropTypes.func.isRequired
+  togglePopUp: PropTypes.func.isRequired,
+  tracks: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+      preview_url: PropTypes.string,
+      is_playable: PropTypes.bool,
+      duration_ms: PropTypes.number,
+      album: PropTypes.shape({
+        release_date: PropTypes.string
+      })        
+    })
+  ).isRequired
 }
 
 export default PopUpTopTracks

@@ -5,7 +5,7 @@ import StyledContainer from './styles'
 
 const WithContainer = WrapperComponent => props => (
   <StyledContainer { ...props }>
-    <WrapperComponent>
+    <WrapperComponent { ...props }>
       { props.children }
     </WrapperComponent>
   </StyledContainer>

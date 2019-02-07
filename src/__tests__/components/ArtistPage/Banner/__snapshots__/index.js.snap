@@ -2,7 +2,7 @@
 
 exports[`Component | Banner should render a component 1`] = `
 <styled.div>
-  <Component />
+  <Connect(Component) />
   <Styled(ReactComponent) />
 </styled.div>
 `;
