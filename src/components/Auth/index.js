@@ -8,7 +8,7 @@ import GetToken from 'lib/auth/get-token'
 import { authUpdate } from 'actions/auth'
 
 export class Auth extends Component {
-  componentWillMount() {
+  componentDidMount() {
     const { authUpdate } = this.props
     const url = GetUrl(window.location.href)
     const token = GetToken(url)

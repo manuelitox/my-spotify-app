@@ -1,19 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component | BannerWrapper should render a component 1`] = `
-<styled.div>
-  <BannerWrapper
-    genres={
-      Array [
-        "hip pop",
-        "neo soul",
-        "pop",
-        "r&b",
-        "urban contemporary",
-      ]
-    }
-    name="Alicia Keys"
-    photo="https://i.scdn.co/image/05e25d030a1caa1611b1e7248d89b557d9867258"
+<Fragment>
+  <img
+    alt="artist name"
+    height="120"
+    src="path/to/photo.jpg"
+    width="120"
   />
-</styled.div>
+  <div>
+    <h1>
+      artist name
+    </h1>
+    <ul>
+      <li
+        key="0"
+      >
+        pop
+         
+        <span>
+          -
+        </span>
+      </li>
+      <li
+        key="1"
+      >
+        rock
+         
+      </li>
+    </ul>
+  </div>
+</Fragment>
 `;

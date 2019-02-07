@@ -9,6 +9,7 @@ exports[`Component | PopUpTopTracks should render a component 1`] = `
     ]
   }
   excludeScrollbar={false}
+  isOpen={true}
   outsideClickIgnoreClass="ignore-react-onclickoutside"
   preventDefault={false}
   stopPropagation={false}
@@ -22,45 +23,11 @@ exports[`Component | PopUpTopTracks should render a component 1`] = `
   </Title>
   <styled.div>
     <Track
-      duration="3 min"
+      duration={354320}
       isPopUpVersion={true}
-      name="Empire State of Mind"
-      previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-      songIsAvailable={true}
-    />
-    <Track
-      duration="4 min"
-      isPopUpVersion={true}
-      name="No one"
-      previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-      songIsAvailable={true}
-    />
-    <Track
-      duration="3:23 min"
-      isPopUpVersion={true}
-      name="Girl of Fire"
-      previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-      songIsAvailable={true}
-    />
-    <Track
-      duration="5:42 min"
-      isPopUpVersion={true}
-      name="Fallin'"
-      previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-      songIsAvailable={true}
-    />
-    <Track
-      duration="3:23 min"
-      isPopUpVersion={true}
-      name="Girl of Fire"
-      previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
-      songIsAvailable={true}
-    />
-    <Track
-      duration="5:42 min"
-      isPopUpVersion={true}
-      name="Fallin'"
-      previewUrl="https://p.scdn.co/mp3-preview/d7624ec5f93b6d92c1836a95c40ecce463584f6e?cid=774b29d4f13844c495f206cafdad9c86"
+      key="123asd"
+      name="song name"
+      previewUrl="path/to/preview/url"
       songIsAvailable={true}
     />
   </styled.div>

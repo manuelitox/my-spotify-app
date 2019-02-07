@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
 import StyledInput from './stylesInput'
 import LoadingMessage from './loading'
 import SuggestionsList from './suggestionsList'

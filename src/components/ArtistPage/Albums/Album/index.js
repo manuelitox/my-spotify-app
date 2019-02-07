@@ -6,15 +6,20 @@ import StylesAlbum from './styles'
 import PlaceholderAlbum from 'svgs/placeholderAlbum.svg'
 
 class Album extends Component {
-  state = { isOpen: false }
+  state = { isOpen: false, id: null }
 
-  togglePopUp = () => this.setState({ isOpen: !this.state.isOpen })
+  selectToAlbumId = id => this.setState({ id })
+
+  togglePopUp = id => {
+    this.setState({ isOpen: !this.state.isOpen })
+    this.selectToAlbumId(id)
+  }
 
   render () {
-    const { cover, title, releaseDate, numberTracks } = this.props
+    const { id, cover, title, releaseDate, numberTracks } = this.props
     return (
       <Fragment>
-        <StylesAlbum onClick={ this.togglePopUp }>
+        <StylesAlbum onClick={ this.togglePopUp.bind(this, id) }>
           <img 
             src={ cover ? cover : PlaceholderAlbum } 
             alt={ title }
@@ -27,6 +32,8 @@ class Album extends Component {
           </div>
         </StylesAlbum>      
         <PopUpAlbum 
+          cover={ cover }
+          albumId={ this.state.id }
           isOpen={ this.state.isOpen } 
           togglePopUp={ this.togglePopUp }
           title={ title }
@@ -38,6 +45,7 @@ class Album extends Component {
 }
 
 Album.propTypes = {
+  id: PropTypes.string,
   cover: PropTypes.string,
   title: PropTypes.string.isRequired,
   releaseDate: PropTypes.string.isRequired,

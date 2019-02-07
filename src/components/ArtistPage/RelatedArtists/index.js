@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types' 
+import { connect } from 'react-redux'
 
 import theme from 'config/theme'
 import Title from 'components/ArtistPage/Title/'
@@ -8,27 +10,24 @@ import PopUpRelatedArtists from './PopUp/'
 import StyledRelatedArtists from './styles'
 import StyledWrapperRelatedArtists from './styles-wrapper'
 import StyledContainerRelatedArtists from './styles-container'
+import getImage from 'lib/get-image'
 
-class RelatedArtists extends Component {
+export class RelatedArtists extends Component {
   state = { isOpen: false }
   
   togglePopUp = () => this.setState({ isOpen: !this.state.isOpen })
 
   render () {
+    const { relatedArtists } = this.props 
     return (
       <StyledRelatedArtists>
         <StyledContainerRelatedArtists>
           <Title color={ theme.blueDark }>Related Artists</Title>
           <StyledWrapperRelatedArtists>
-            <Artist id="1" name="Martin Abasto" />
-            <Artist id="2" name="Bairam Frootan" />
-            <Artist id="3" name="Emmalynn Mazzia" />
-            <Artist id="4" name="Gabriel Pires" />
-            <Artist id="5" name="Irene Sotelo" />
-            <Artist id="6" name="Oea Romana" />
-            <Artist id="7" name="Pin Jung-Eym" />
-            <Artist id="8" name="Udom Paowsong" />    
-            <Artist id="9" name="John Doe" />    
+            { relatedArtists && relatedArtists.artists && relatedArtists.artists.map((artist, index) => {
+              if ( index > 8 ) return null
+              return <Artist key={ index } id={ artist.id } photo={ getImage(artist.images, 200) } name={ artist.name } />
+            }) }  
           </StyledWrapperRelatedArtists>
           <Button 
             bg={ theme.blueDark }
@@ -43,4 +42,23 @@ class RelatedArtists extends Component {
   }
 }
 
-export default RelatedArtists
+RelatedArtists.propTypes = {
+  relatedArtists: PropTypes.shape({
+    artists: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string,
+        name: PropTypes.string,
+        images: PropTypes.array      
+      })
+    )
+  }).isRequired
+}
+
+const mapStateToProps = (state) => ({
+  relatedArtists: state.ArtistReducer.relatedArtists
+})
+
+export default connect(
+  mapStateToProps,
+  {}
+)(RelatedArtists)
