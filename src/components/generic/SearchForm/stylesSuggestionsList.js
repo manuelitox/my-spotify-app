@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const StyledSuggestionsList = styled.ul`
+  background-color: ${ props => props.theme.blueDark };
   border: 1px solid ${ props => props.theme.blueLightBorder };
   border-radius: 0 0 4px 4px;
   bottom: 2px;

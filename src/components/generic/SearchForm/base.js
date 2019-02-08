@@ -24,7 +24,8 @@ const SearchForm = ({
       isOpen={ isOpen }
       onClick={ openSuggestions }
       onChange={ onChange }
-      placeholder={ placeholder } />
+      placeholder={ placeholder }
+      autoComplete="off" />
     <LoadingMessage loading={ loading } />
     <ArtistMatchesCounter isOpen={ isOpen } loading={ loading } numberOfArtists={ data.length } />
     <SuggestionsList isOpen={ isOpen } numberOfArtists={ data.length } data={ data } closeSuggestions={ closeSuggestions } token={ token } />
