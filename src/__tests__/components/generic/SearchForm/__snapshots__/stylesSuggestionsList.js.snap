@@ -11,6 +11,9 @@ exports[`Component | StyledSuggestionsList should render a styled component 1`] 
         "isStatic": false,
         "rules": Array [
           "
+  background-color: ",
+          [Function],
+          ";
   border: 1px solid ",
           [Function],
           ";
