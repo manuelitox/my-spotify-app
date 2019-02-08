@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
         content: '';
         height: 100%;
         left: 0;
+        min-height: 100vh;
         top: 0;
         position: absolute;
         width: 100%;
