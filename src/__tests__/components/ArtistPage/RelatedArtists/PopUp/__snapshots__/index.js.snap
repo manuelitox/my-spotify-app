@@ -25,41 +25,11 @@ exports[`Component | PopUpRelatedArtists should render a component 1`] = `
     inPopup={true}
     onClick={[MockFunction]}
   >
-    <Artist
-      id="1"
-      name="Martin Abasto"
-    />
-    <Artist
-      id="2"
-      name="Bairam Frootan"
-    />
-    <Artist
-      id="3"
-      name="Emmalynn Mazzia"
-    />
-    <Artist
-      id="4"
-      name="Gabriel Pires"
-    />
-    <Artist
-      id="5"
-      name="Irene Sotelo"
-    />
-    <Artist
-      id="6"
-      name="Oea Romana"
-    />
-    <Artist
-      id="7"
-      name="Pin Jung-Eym"
-    />
-    <Artist
-      id="8"
-      name="Udom Paowsong"
-    />
-    <Artist
-      id="9"
-      name="John Doe"
+    <Connect(Artist)
+      id="123"
+      key="0"
+      name="artist name"
+      photo="path/to/photo"
     />
   </styled.div>
 </OnClickOutside(PopUpContainer)>

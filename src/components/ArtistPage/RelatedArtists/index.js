@@ -19,12 +19,13 @@ export class RelatedArtists extends Component {
 
   render () {
     const { relatedArtists } = this.props 
+    const artists = relatedArtists && relatedArtists.artists ? relatedArtists.artists : []
     return (
       <StyledRelatedArtists>
         <StyledContainerRelatedArtists>
           <Title color={ theme.blueDark }>Related Artists</Title>
           <StyledWrapperRelatedArtists>
-            { relatedArtists && relatedArtists.artists && relatedArtists.artists.map((artist, index) => {
+            { artists.map((artist, index) => {
               if ( index > 8 ) return null
               return <Artist key={ index } id={ artist.id } photo={ getImage(artist.images, 200) } name={ artist.name } />
             }) }  
@@ -35,7 +36,7 @@ export class RelatedArtists extends Component {
             onClick={ this.togglePopUp }>
             view related artists
           </Button>
-          <PopUpRelatedArtists isOpen={ this.state.isOpen } togglePopUp={ this.togglePopUp } />
+          <PopUpRelatedArtists isOpen={ this.state.isOpen } togglePopUp={ this.togglePopUp } relatedArtists={ artists } />
         </StyledContainerRelatedArtists>
       </StyledRelatedArtists>
     )
