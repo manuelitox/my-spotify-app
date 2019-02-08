@@ -9,7 +9,7 @@ exports[`Component | RelatedArtists should render a component 1`] = `
       Related Artists
     </Title>
     <styled.div>
-      <Artist
+      <Connect(Artist)
         id="123"
         key="0"
         name="artist name"
@@ -25,6 +25,20 @@ exports[`Component | RelatedArtists should render a component 1`] = `
     </Button>
     <PopUpRelatedArtists
       isOpen={false}
+      relatedArtists={
+        Array [
+          Object {
+            "id": "123",
+            "images": Array [
+              Object {
+                "height": 200,
+                "url": "path/to/photo",
+              },
+            ],
+            "name": "artist name",
+          },
+        ]
+      }
       togglePopUp={[Function]}
     />
   </Component>

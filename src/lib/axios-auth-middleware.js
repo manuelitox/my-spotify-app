@@ -7,6 +7,7 @@ axiosAuthMiddleware.interceptors.response.use(
     const originalRequest = error.config
     if ( error.response && error.response.status === 401 && !originalRequest._retry) {
       originalRequest._retry = true
+      window.location.replace('/')
       return error
     } else {
       return Promise.reject(error);
