@@ -22,6 +22,6 @@ export const artistsSearch = (query, token) => {
     dispatch(searchPending())
     axiosAuthMiddleware.get(`${domain}search?q=${query}&type=artist&market=from_token&limit=20&offset=0`, { headers })
     .then(response => dispatch(searchSuccessFully(response.data.artists.items)))
-    .catch(error => dispatch(authUpdate('')))
+    .catch(error => console.log(error))
   }
 }
