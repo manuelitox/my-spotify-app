@@ -14,6 +14,17 @@ class Track extends Component {
     this.audio = new Audio(previewUrl)
   }
 
+  componentDidUpdate (prevProps) {
+    const { previewUrl } = this.props
+    if (previewUrl !== prevProps.previewUrl) {
+      this.audio = new Audio(previewUrl)
+    }
+  }
+
+  componentWillUnmount () {
+    this.audio.pause()
+  }
+
   togglePlay = () => {
     const { play } = this.state
     this.setState({ play: !play })
