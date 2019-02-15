@@ -6,10 +6,10 @@ import theme from 'config/theme'
 import Button from 'components/generic/Button/'
 import StyledPopUp from './styles'
 
-const PopUp = ({ width, children, togglePopUp, textCloseButton, WithCloseButton }) => (
+const PopUp = ({ width, children, togglePopUp, textCloseButton, WithCloseButton, className }) => (
   <Fragment>
     <BodyClassName className="fixed" />
-    <StyledPopUp width={ width }>
+    <StyledPopUp id={ className } className={ className } width={ width }>
       { WithCloseButton ? 
         <Button 
           bg={ theme.blueDark }
@@ -28,6 +28,7 @@ PopUp.propTypes = {
     PropTypes.string,
     PropTypes.object
   ]),
+  className: PropTypes.string,
   togglePopUp: PropTypes.func.isRequired,
   WithCloseButton: PropTypes.bool
 }

@@ -19,6 +19,7 @@ PopUpContainer.defaultProps = {
 PopUpContainer.propTypes = {
   width: PropTypes.string, 
   isOpen: PropTypes.bool,
+  className: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.string,

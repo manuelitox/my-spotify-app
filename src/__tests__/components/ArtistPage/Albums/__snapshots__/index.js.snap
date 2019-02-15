@@ -37,6 +37,7 @@ exports[`Component | Albums should render a component 1`] = `
         },
       ]
     }
+    className="albums-list-popup"
     isOpen={false}
     togglePopUp={[Function]}
   />
