@@ -1,6 +1,6 @@
 ![demo](https://github.com/manuelitox/my-spotify-app/blob/master/demo.gif)
 
-playing with API spotify, React and Redux.
+Playing with Spotify API, React & Redux.
 
 ## How to use:
 
@@ -11,7 +11,7 @@ REACT_APP_SPOTIFY_KEY=
 REACT_APP_CLIENT_ID=
 REACT_APP_URL=http://localhost:3000/
 ```
-You can read how to get the Spotify `KEY` and `CLIENT_ID` in his [official documentation](https://developer.spotify.com/documentation/web-api/)
+You can read how to get the Spotify `KEY` and `CLIENT_ID` in the [official documentation](https://developer.spotify.com/documentation/web-api/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
