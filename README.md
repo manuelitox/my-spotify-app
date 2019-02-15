@@ -1,5 +1,18 @@
 ![demo](https://github.com/manuelitox/my-spotify-app/blob/master/demo.gif)
 
+playing with API spotify, React and Redux.
+
+## How to use:
+
+You need to create three environment variables in the `.env` file.
+
+```
+REACT_APP_SPOTIFY_KEY=
+REACT_APP_CLIENT_ID=
+REACT_APP_URL=http://localhost:3000/
+```
+You can read how to get the Spotify `KEY` and `CLIENT_ID` in his [official documentation](https://developer.spotify.com/documentation/web-api/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
