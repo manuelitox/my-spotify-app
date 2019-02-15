@@ -3,8 +3,6 @@ import * as constants from 'constants/search'
 import makeActionCreator from 'lib/make-action-creator'
 import axiosAuthMiddleware from 'lib/axios-auth-middleware'
 
-import { authUpdate } from './auth'
-
 // Actions creators:
 // -----------------
 export const searchPending = makeActionCreator(constants.SEARCH_PENDING)
