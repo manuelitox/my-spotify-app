@@ -13,7 +13,7 @@ class Album extends Component {
 
   togglePopUp = id => {
     const albumsListPopup = document.getElementById('albums-list-popup')
-    albumsListPopup.scrollTo(0, 0);
+    albumsListPopup && albumsListPopup.scrollTo(0, 0);
     this.setState({ isOpen: !this.state.isOpen })
     this.selectToAlbumId(id)
   }
