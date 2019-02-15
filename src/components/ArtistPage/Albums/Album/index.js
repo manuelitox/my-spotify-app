@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
+import BodyClassName from 'react-body-classname'
 
 import PopUpAlbum from './PopUp/'
 import StylesAlbum from './styles'
@@ -11,14 +12,18 @@ class Album extends Component {
   selectToAlbumId = id => this.setState({ id })
 
   togglePopUp = id => {
+    const albumsListPopup = document.getElementById('albums-list-popup')
+    albumsListPopup.scrollTo(0, 0);
     this.setState({ isOpen: !this.state.isOpen })
     this.selectToAlbumId(id)
   }
 
   render () {
+    const { isOpen } = this.state
     const { id, cover, title, releaseDate, numberTracks } = this.props
     return (
       <Fragment>
+        { isOpen && <BodyClassName className="disable-albums-list-popup" /> }
         <StylesAlbum onClick={ this.togglePopUp.bind(this, id) }>
           <img 
             src={ cover ? cover : PlaceholderAlbum } 

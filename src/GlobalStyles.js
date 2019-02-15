@@ -29,6 +29,9 @@ const GlobalStyles = createGlobalStyle`
         z-index: 4;
       }
     }
+    &.disable-albums-list-popup .albums-list-popup {
+      overflow: hidden;
+    }
   }
   button {
     cursor: pointer;

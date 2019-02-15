@@ -12,7 +12,7 @@ import getImage from 'lib/get-image'
 export class Albums extends Component {
   state = { isOpen: false }
 
-  togglePopUp = () => this.setState({ isOpen: !this.state.isOpen }) 
+  togglePopUp = () => this.setState({ isOpen: !this.state.isOpen })
 
   render () {
     const { albums } = this.props
@@ -27,7 +27,7 @@ export class Albums extends Component {
           }) }
         </StyledWrapperAlbums>
         <Button onClick={ this.togglePopUp }>view more albums</Button>
-        <PopUpAlbums isOpen={ this.state.isOpen } togglePopUp={ this.togglePopUp } albums={ albumsList } />
+        <PopUpAlbums isOpen={ this.state.isOpen } togglePopUp={ this.togglePopUp } albums={ albumsList } className="albums-list-popup" />
       </div>      
     )
   } 
